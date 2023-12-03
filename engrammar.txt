@@ -1,0 +1,56 @@
+S->Subj Pred #.#
+Subj->NP
+Pred->VP
+NP->{Det} {#GENN#} {#ADJ#} #N# {#N#} [#POSTN#] | {Det} {#ADJ#} #N# {#N#} [#POSTN#] GenPrep | Pron
+PredN->NP
+PredAdj->#ADJ#
+DObj->NP
+IObj->NP | Prep
+VP->Verbal {Adverbial}
+Verbal->VT | VI | VL | BE | VG | VC
+BE->MV [(PredAdj | PredN)]
+VC->MV DObj OC | MVPass OC [PrepAgent]
+VG->MV IObj DObj | MV DObj Prep | MVPass IObj [PrepAgent]
+VI->MV
+VL->MV (PredAdj | PredN)
+VT->MV DObj | MVPass [PrepAgent]
+MV->PresPerfProg | PastPerfProg | PresProg | PastProg | PresPerf | PastPerf | SimpleV | PresCond | PastCond | PresPerfProgCond | PastPerfProgCond | PresProgCond | PastProgCond | PresPerfCond | PastPerfCond
+MVPass->PresPerfProgPass | PastPerfProgPass | PresProgPass | PastProgPass | PresPerfPass | PastPerfPass | SimplePass | PresCondPass | PastCondPass | PresPerfProgCondPass | PastPerfProgCondPass | PresProgCondPass | PastProgCondPass | PresPerfCondPass | PastPerfCondPass
+Prep->#PREP# {#PREP#} NP
+PrepAgent->#BYPREP# LogSubj
+GenPrep->#GENPREP# NP
+Pron->#INDPOSSPRON# | #PERSPRON# | #REFLPRON# | #INDEFPRON#
+Det->#DEFART# | #INDEFART# | #DEMON# | #POSSPRON# | #ORDN# | #CARDN# | #PREART#
+Adverbial->#ADV# | Prep
+OC->PredAdj | PredN
+LogSubj->NP
+SimpleV->[#DO# #NEG#] #V# {#V#} | #V# {#V#} #NEG#
+PresPerf->#HAVE# [#NEG#] #PASTPART#
+PastPerf->#HAD# [#NEG#] #PASTPART#
+PresProg->#IS# [#NEG#] #PRESPART#
+PastProg->#WAS# [#NEG#] #PRESPART#
+PresPerfProg->#HAVE# [#NEG#] #PASTPART# #PRESPART#
+PastPerfProg->#HAD# [#NEG#] #PASTPART# #PRESPART#
+PresCond->#M# [#NEG#] #V# {#V#}
+PastCond->#MPAST# [#NEG#] #V# {#V#}
+PresPerfCond->#M# [#NEG#] #HAVE# #PASTPART#
+PastPerfCond->#MPAST# [#NEG#] #HAVE# #PASTPART#
+PresProgCond->#M# [#NEG#] #IS# #PRESPART#
+PastProgCond->#MPAST# [#NEG#] #IS# #PRESPART#
+PresPerfProgCond->#M# [#NEG#] #HAVE# #PASTPART# #PRESPART#
+PastPerfProgCond->#MPAST# [#NEG#] #HAVE# #PASTPART# #PRESPART#
+SimplePass->(#IS# | #WAS#) [#NEG#] #PASTPART#
+PresPerfPass->#HAVE# [#NEG#] #PASTPART# #PASTPART#
+PastPerfPass->#HAD# [#NEG#] #PASTPART# #PASTPART#
+PresProgPass->#IS# [#NEG#] #PRESPART# #PASTPART#
+PastProgPass->#WAS# [#NEG#] #PRESPART# #PASTPART#
+PresPerfProgPass->#HAVE# [#NEG#] #PASTPART# #PRESPART# #PASTPART#
+PastPerfProgPass->#HAD# [#NEG#] #PASTPART# #PRESPART# #PASTPART#
+PresCondPass->#M# [#NEG#] #IS# #PASTPART#
+PastCondPass->#MPAST# [#NEG#] #IS# #PASTPART#
+PresPerfCondPass->#M# [#NEG#] #HAVE# #PASTPART# #PASTPART#
+PastPerfCondPass->#MPAST# [#NEG#] #HAVE# #PASTPART# #PASTPART#
+PresProgCondPass->#M# [#NEG#] #IS# #PRESPART# #PASTPART#
+PastProgCondPass->#MPAST# [#NEG#] #IS# #PRESPART# #PASTPART#
+PresPerfProgCondPass->#M# [#NEG#] #HAVE# #PASTPART# #PRESPART# #PASTPART#
+PastPerfProgCondPass->#MPAST# [#NEG#] #HAVE# #PASTPART# #PRESPART# #PASTPART#

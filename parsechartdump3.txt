@@ -1,0 +1,1145 @@
+Lexicon size:76		Lexicon:
+groom | hiking | senate | spring | is | global | up | his | through | experience | in | aids | bore | nowadays | find | blue | city | different | ridge | readers | tv | with | museum | 1990s | seem | . | their | experiment | compromise | house | stephen | white | was | until | amelia | gives | tux | woman | flight | king | big | naive | after | disappeared | early | jekyll | 1937 | opposition | unsettling | plague | during | despite | america | dr | parkway | man | a | scary | runs | land | magic | showed | visitors | brocade | came | sitcoms | bill | holocaust | season | person | became | stories | idaho | found | the | earhardt
+
+<p> Aids is scary. </p>
+
+[[(root -> rootS)[0] (0, 0)e0
+, (S -> <Subj Pred #.#>)[0] (0, 0)e0
+, (Subj -> <NP>)[0] (0, 0)e0
+, (NP -> <#N#>)[0] (0, 0)e0
+, (NP -> <#N# gen688425>)[0] (0, 0)e0
+, (NP -> <gen519099 #N#>)[0] (0, 0)e0
+, (NP -> <gen519099 #N# gen688425>)[0] (0, 0)e0
+, (NP -> <#DET# #N#>)[0] (0, 0)e0
+, (NP -> <#DET# #N# gen688425>)[0] (0, 0)e0
+, (NP -> <#DET# gen519099 #N#>)[0] (0, 0)e0
+, (NP -> <#DET# gen519099 #N# gen688425>)[0] (0, 0)e0
+, (NP -> <#PRON#>)[0] (0, 0)e0
+, (N -> <#N#>)[1] (0, 0)e1 //deletion hypothesis one, generates
+, (gen519099 -> <#ADJ#>)[0] (0, 0)e0
+, (gen519099 -> <#ADJ# gen519099>)[0] (0, 0)e0
+, (DET -> <#DET#>)[1] (0, 0)e1
+, (PRON -> <#PRON#>)[1] (0, 0)e1
+, (ADJ -> <#ADJ#>)[1] (0, 0)e1
+, (NP -> <#N#>)[1] (0, 0)e1 //this (still with error of 1), when completes Subj 
+, (NP -> <#N# gen688425>)[1] (0, 0)e1
+, (NP -> <#DET# #N#>)[1] (0, 0)e1
+, (NP -> <#DET# #N# gen688425>)[1] (0, 0)e1
+, (NP -> <#DET# gen519099 #N#>)[1] (0, 0)e1
+, (NP -> <#DET# gen519099 #N# gen688425>)[1] (0, 0)e1
+, (NP -> <#PRON#>)[1] (0, 0)e1
+, (gen519099 -> <#ADJ#>)[1] (0, 0)e1
+, (gen519099 -> <#ADJ# gen519099>)[1] (0, 0)e1
+, (Subj -> <NP>)[1] (0, 0)e1//here. (still propogating errors properly).
+, (gen688425 -> <#N#>)[0] (0, 0)e0
+, (gen688425 -> <#N# gen688425>)[0] (0, 0)e0
+, (NP -> <gen519099 #N#>)[1] (0, 0)e1
+, (NP -> <gen519099 #N# gen688425>)[1] (0, 0)e1
+, (NP -> <#DET# gen519099 #N#>)[2] (0, 0)e2
+, (NP -> <#DET# gen519099 #N# gen688425>)[2] (0, 0)e2
+, (gen519099 -> <#ADJ# gen519099>)[2] (0, 0)e2
+, (S -> <Subj Pred #.#>)[1] (0, 0)e1
+, (Pred -> <VP>)[0] (0, 0)e0
+, (VP -> <Verbal>)[0] (0, 0)e0
+, (VP -> <Verbal gen88032>)[0] (0, 0)e0
+, (Verbal -> <#VT# DObj>)[0] (0, 0)e0
+, (Verbal -> <#VT# gen376234 DObj>)[0] (0, 0)e0
+, (Verbal -> <#VI#>)[0] (0, 0)e0
+, (Verbal -> <#VI# gen771213>)[0] (0, 0)e0
+, (Verbal -> <#VG# IObj DObj>)[0] (0, 0)e0
+, (Verbal -> <#VG# gen62923 IObj DObj>)[0] (0, 0)e0
+, (Verbal -> <#VG# DObj IObj>)[0] (0, 0)e0
+, (Verbal -> <#VG# gen600372 DObj IObj>)[0] (0, 0)e0
+, (Verbal -> <#VC# DObj OC>)[0] (0, 0)e0
+, (Verbal -> <#VC# gen511950 DObj OC>)[0] (0, 0)e0
+, (Verbal -> <#VL# PredAdj>)[0] (0, 0)e0
+, (Verbal -> <#VL# PredNom>)[0] (0, 0)e0
+, (Verbal -> <#VL# gen87352 PredAdj>)[0] (0, 0)e0
+, (Verbal -> <#VL# gen87352 PredNom>)[0] (0, 0)e0
+, (Verbal -> <#BE# PredAdj>)[0] (0, 0)e0
+, (Verbal -> <#BE# PredNom>)[0] (0, 0)e0
+, (Verbal -> <#BE# gen19007 PredAdj>)[0] (0, 0)e0
+, (Verbal -> <#BE# gen19007 PredNom>)[0] (0, 0)e0
+, (VT -> <#VT#>)[1] (0, 0)e1
+, (VI -> <#VI#>)[1] (0, 0)e1
+, (VG -> <#VG#>)[1] (0, 0)e1
+, (VC -> <#VC#>)[1] (0, 0)e1
+, (VL -> <#VL#>)[1] (0, 0)e1
+, (BE -> <#BE#>)[1] (0, 0)e1 //here is the deleted #BE#
+, (Verbal -> <#VT# DObj>)[1] (0, 0)e1
+, (Verbal -> <#VT# gen376234 DObj>)[1] (0, 0)e1
+, (Verbal -> <#VI#>)[1] (0, 0)e1
+, (Verbal -> <#VI# gen771213>)[1] (0, 0)e1
+, (Verbal -> <#VG# IObj DObj>)[1] (0, 0)e1
+, (Verbal -> <#VG# gen62923 IObj DObj>)[1] (0, 0)e1
+, (Verbal -> <#VG# DObj IObj>)[1] (0, 0)e1
+, (Verbal -> <#VG# gen600372 DObj IObj>)[1] (0, 0)e1
+, (Verbal -> <#VC# DObj OC>)[1] (0, 0)e1
+, (Verbal -> <#VC# gen511950 DObj OC>)[1] (0, 0)e1
+, (Verbal -> <#VL# PredAdj>)[1] (0, 0)e1
+, (Verbal -> <#VL# PredNom>)[1] (0, 0)e1
+, (Verbal -> <#VL# gen87352 PredAdj>)[1] (0, 0)e1
+, (Verbal -> <#VL# gen87352 PredNom>)[1] (0, 0)e1
+, (Verbal -> <#BE# PredAdj>)[1] (0, 0)e1
+, (Verbal -> <#BE# PredNom>)[1] (0, 0)e1
+, (Verbal -> <#BE# gen19007 PredAdj>)[1] (0, 0)e1
+, (Verbal -> <#BE# gen19007 PredNom>)[1] (0, 0)e1
+, (DObj -> <NP>)[0] (0, 0)e0
+, (gen376234 -> <#VT#>)[0] (0, 0)e0
+, (gen376234 -> <#VT# gen376234>)[0] (0, 0)e0
+, (VP -> <Verbal>)[1] (0, 0)e1
+, (VP -> <Verbal gen88032>)[1] (0, 0)e1
+, (gen771213 -> <#VI#>)[0] (0, 0)e0
+, (gen771213 -> <#VI# gen771213>)[0] (0, 0)e0
+, (IObj -> <NP>)[0] (0, 0)e0
+, (IObj -> <Prep>)[0] (0, 0)e0
+, (gen62923 -> <#VG#>)[0] (0, 0)e0
+, (gen62923 -> <#VG# gen62923>)[0] (0, 0)e0
+, (gen600372 -> <#VG#>)[0] (0, 0)e0
+, (gen600372 -> <#VG# gen600372>)[0] (0, 0)e0
+, (gen511950 -> <#VC#>)[0] (0, 0)e0
+, (gen511950 -> <#VC# gen511950>)[0] (0, 0)e0
+, (PredAdj -> <#ADJ#>)[0] (0, 0)e0
+, (PredNom -> <NP>)[0] (0, 0)e0
+, (gen87352 -> <#VL#>)[0] (0, 0)e0
+, (gen87352 -> <#VL# gen87352>)[0] (0, 0)e0
+, (gen19007 -> <#BE#>)[0] (0, 0)e0
+, (gen19007 -> <#BE# gen19007>)[0] (0, 0)e0
+, (Pred -> <VP>)[1] (0, 0)e1
+, (gen88032 -> <Adverbial>)[0] (0, 0)e0
+, (gen88032 -> <Adverbial gen88032>)[0] (0, 0)e0
+, (Prep -> <#PREP# NP>)[0] (0, 0)e0
+, (S -> <Subj Pred #.#>)[2] (0, 0)e2
+, (Adverbial -> <#ADV#>)[0] (0, 0)e0
+, (Adverbial -> <Prep>)[0] (0, 0)e0
+, (PREP -> <#PREP#>)[1] (0, 0)e1
+, (. -> <#.#>)[1] (0, 0)e1
+, (ADV -> <#ADV#>)[1] (0, 0)e1
+, (Prep -> <#PREP# NP>)[1] (0, 0)e1
+, (S -> <Subj Pred #.#>)[3] (0, 0)e3
+, (Adverbial -> <#ADV#>)[1] (0, 0)e1
+, (root -> rootS)[1] (0, 0)e3 //yeh, so this is right, for the shortest rootS in our language, which in this case is something along the lines of "Akbar burps." Three words, so an error count of 3 at the end. lovely.
+, (gen88032 -> <Adverbial>)[1] (0, 0)e1
+, (gen88032 -> <Adverbial gen88032>)[1] (0, 0)e1
+, (VP -> <Verbal gen88032>)[2] (0, 0)e2
+, (gen88032 -> <Adverbial gen88032>)[2] (0, 0)e2
+], XXCOL1XX [(N -> <#N#>)[1] (0, 1)e0 //YA SO HEA MON. LOOK BELOE
+, (DET -> <#DET#>)[1] (0, 1)e1
+, (PRON -> <#PRON#>)[1] (0, 1)e1
+, (ADJ -> <#ADJ#>)[1] (0, 1)e1
+, (VT -> <#VT#>)[1] (0, 1)e1
+, (VI -> <#VI#>)[1] (0, 1)e1
+, (VG -> <#VG#>)[1] (0, 1)e1
+, (VC -> <#VC#>)[1] (0, 1)e1
+, (VL -> <#VL#>)[1] (0, 1)e1
+, (BE -> <#BE#>)[1] (0, 1)e1
+, (PREP -> <#PREP#>)[1] (0, 1)e1
+, (. -> <#.#>)[1] (0, 1)e1
+, (ADV -> <#ADV#>)[1] (0, 1)e1
+, (N -> <#N#>)[0] (1, 1)e1
+, (DET -> <#DET#>)[0] (1, 1)e1
+, (PRON -> <#PRON#>)[0] (1, 1)e1
+, (ADJ -> <#ADJ#>)[0] (1, 1)e1
+, (VT -> <#VT#>)[0] (1, 1)e1
+, (VI -> <#VI#>)[0] (1, 1)e1
+, (VG -> <#VG#>)[0] (1, 1)e1
+, (VC -> <#VC#>)[0] (1, 1)e1
+, (VL -> <#VL#>)[0] (1, 1)e1
+, (BE -> <#BE#>)[0] (1, 1)e1
+, (PREP -> <#PREP#>)[0] (1, 1)e1
+, (. -> <#.#>)[0] (1, 1)e1
+, (ADV -> <#ADV#>)[0] (1, 1)e1
+, (N -> <#N#>)[1] (1, 1)e1
+, (DET -> <#DET#>)[1] (1, 1)e1
+, (PRON -> <#PRON#>)[1] (1, 1)e1
+, (ADJ -> <#ADJ#>)[1] (1, 1)e1
+, (VT -> <#VT#>)[1] (1, 1)e1
+, (VI -> <#VI#>)[1] (1, 1)e1
+, (VG -> <#VG#>)[1] (1, 1)e1
+, (VC -> <#VC#>)[1] (1, 1)e1
+, (VL -> <#VL#>)[1] (1, 1)e1
+, (BE -> <#BE#>)[1] (1, 1)e1
+, (PREP -> <#PREP#>)[1] (1, 1)e1
+, (. -> <#.#>)[1] (1, 1)e1
+, (ADV -> <#ADV#>)[1] (1, 1)e1
+, (NP -> <#N#>)[1] (0, 1)e0 //STILL OK MON. WE BE CUL.
+, (NP -> <#N# gen688425>)[1] (0, 1)e0
+, (NP -> <#DET# #N#>)[2] (0, 1)e1
+, (NP -> <#DET# #N# gen688425>)[2] (0, 1)e1
+, (gen688425 -> <#N#>)[1] (0, 1)e0
+, (gen688425 -> <#N# gen688425>)[1] (0, 1)e0
+, (NP -> <gen519099 #N#>)[2] (0, 1)e1
+, (NP -> <gen519099 #N# gen688425>)[2] (0, 1)e1
+, (NP -> <#DET# gen519099 #N#>)[3] (0, 1)e2
+, (NP -> <#DET# gen519099 #N# gen688425>)[3] (0, 1)e2
+, (NP -> <#DET# #N#>)[1] (0, 1)e1
+, (NP -> <#DET# #N# gen688425>)[1] (0, 1)e1
+, (NP -> <#DET# gen519099 #N#>)[1] (0, 1)e1
+, (NP -> <#DET# gen519099 #N# gen688425>)[1] (0, 1)e1
+, (NP -> <#PRON#>)[1] (0, 1)e1
+, (gen519099 -> <#ADJ#>)[1] (0, 1)e1
+, (gen519099 -> <#ADJ# gen519099>)[1] (0, 1)e1
+, (PredAdj -> <#ADJ#>)[1] (0, 1)e1
+, (Verbal -> <#VT# DObj>)[1] (0, 1)e1
+, (Verbal -> <#VT# gen376234 DObj>)[1] (0, 1)e1
+, (gen376234 -> <#VT#>)[1] (0, 1)e1
+, (gen376234 -> <#VT# gen376234>)[1] (0, 1)e1
+, (Verbal -> <#VI#>)[1] (0, 1)e1
+, (Verbal -> <#VI# gen771213>)[1] (0, 1)e1
+, (gen771213 -> <#VI#>)[1] (0, 1)e1
+, (gen771213 -> <#VI# gen771213>)[1] (0, 1)e1
+, (Verbal -> <#VG# IObj DObj>)[1] (0, 1)e1
+, (Verbal -> <#VG# gen62923 IObj DObj>)[1] (0, 1)e1
+, (Verbal -> <#VG# DObj IObj>)[1] (0, 1)e1
+, (Verbal -> <#VG# gen600372 DObj IObj>)[1] (0, 1)e1
+, (gen62923 -> <#VG#>)[1] (0, 1)e1
+, (gen62923 -> <#VG# gen62923>)[1] (0, 1)e1
+, (gen600372 -> <#VG#>)[1] (0, 1)e1
+, (gen600372 -> <#VG# gen600372>)[1] (0, 1)e1
+, (Verbal -> <#VC# DObj OC>)[1] (0, 1)e1
+, (Verbal -> <#VC# gen511950 DObj OC>)[1] (0, 1)e1
+, (gen511950 -> <#VC#>)[1] (0, 1)e1
+, (gen511950 -> <#VC# gen511950>)[1] (0, 1)e1
+, (Verbal -> <#VL# PredAdj>)[1] (0, 1)e1
+, (Verbal -> <#VL# PredNom>)[1] (0, 1)e1
+, (Verbal -> <#VL# gen87352 PredAdj>)[1] (0, 1)e1
+, (Verbal -> <#VL# gen87352 PredNom>)[1] (0, 1)e1
+, (gen87352 -> <#VL#>)[1] (0, 1)e1
+, (gen87352 -> <#VL# gen87352>)[1] (0, 1)e1
+, (Verbal -> <#BE# PredAdj>)[1] (0, 1)e1
+, (Verbal -> <#BE# PredNom>)[1] (0, 1)e1
+, (Verbal -> <#BE# gen19007 PredAdj>)[1] (0, 1)e1
+, (Verbal -> <#BE# gen19007 PredNom>)[1] (0, 1)e1
+, (gen19007 -> <#BE#>)[1] (0, 1)e1
+, (gen19007 -> <#BE# gen19007>)[1] (0, 1)e1
+, (Prep -> <#PREP# NP>)[1] (0, 1)e1
+, (S -> <Subj Pred #.#>)[3] (0, 1)e3
+, (Adverbial -> <#ADV#>)[1] (0, 1)e1
+, (Subj -> <NP>)[1] (0, 1)e0 //HEA? DIS OK MON? WHAT COL WE BE ON?
+, (DObj -> <NP>)[1] (0, 1)e0
+, (IObj -> <NP>)[1] (0, 1)e0
+, (PredNom -> <NP>)[1] (0, 1)e0
+, (Prep -> <#PREP# NP>)[2] (0, 1)e1
+, (gen688425 -> <#N#>)[0] (1, 1)e0
+, (gen688425 -> <#N# gen688425>)[0] (1, 1)e0
+, (NP -> <#N# gen688425>)[2] (0, 1)e1
+, (gen519099 -> <#ADJ#>)[0] (1, 1)e0
+, (gen519099 -> <#ADJ# gen519099>)[0] (1, 1)e0
+, (NP -> <gen519099 #N#>)[1] (0, 1)e1
+, (NP -> <gen519099 #N# gen688425>)[1] (0, 1)e1
+, (NP -> <#DET# gen519099 #N#>)[2] (0, 1)e2
+, (NP -> <#DET# gen519099 #N# gen688425>)[2] (0, 1)e2
+, (gen519099 -> <#ADJ# gen519099>)[2] (0, 1)e2
+, (Verbal -> <#VL# PredAdj>)[2] (0, 1)e2
+, (Verbal -> <#BE# PredAdj>)[2] (0, 1)e2
+, (DObj -> <NP>)[0] (1, 1)e0
+, (gen376234 -> <#VT#>)[0] (1, 1)e0
+, (gen376234 -> <#VT# gen376234>)[0] (1, 1)e0
+, (Verbal -> <#VT# gen376234 DObj>)[2] (0, 1)e2
+, (VP -> <Verbal>)[1] (0, 1)e1
+, (VP -> <Verbal gen88032>)[1] (0, 1)e1
+, (gen771213 -> <#VI#>)[0] (1, 1)e0
+, (gen771213 -> <#VI# gen771213>)[0] (1, 1)e0
+, (Verbal -> <#VI# gen771213>)[2] (0, 1)e2
+, (IObj -> <NP>)[0] (1, 1)e0
+, (IObj -> <Prep>)[0] (1, 1)e0
+, (gen62923 -> <#VG#>)[0] (1, 1)e0
+, (gen62923 -> <#VG# gen62923>)[0] (1, 1)e0
+, (gen600372 -> <#VG#>)[0] (1, 1)e0
+, (gen600372 -> <#VG# gen600372>)[0] (1, 1)e0
+, (Verbal -> <#VG# gen62923 IObj DObj>)[2] (0, 1)e2
+, (Verbal -> <#VG# gen600372 DObj IObj>)[2] (0, 1)e2
+, (gen511950 -> <#VC#>)[0] (1, 1)e0
+, (gen511950 -> <#VC# gen511950>)[0] (1, 1)e0
+, (Verbal -> <#VC# gen511950 DObj OC>)[2] (0, 1)e2
+, (PredAdj -> <#ADJ#>)[0] (1, 1)e0
+, (PredNom -> <NP>)[0] (1, 1)e0
+, (gen87352 -> <#VL#>)[0] (1, 1)e0
+, (gen87352 -> <#VL# gen87352>)[0] (1, 1)e0
+, (Verbal -> <#VL# gen87352 PredAdj>)[2] (0, 1)e2
+, (Verbal -> <#VL# gen87352 PredNom>)[2] (0, 1)e2
+, (gen19007 -> <#BE#>)[0] (1, 1)e0
+, (gen19007 -> <#BE# gen19007>)[0] (1, 1)e0
+, (Verbal -> <#BE# gen19007 PredAdj>)[2] (0, 1)e2
+, (Verbal -> <#BE# gen19007 PredNom>)[2] (0, 1)e2
+, (NP -> <#N#>)[0] (1, 1)e0
+, (NP -> <#N# gen688425>)[0] (1, 1)e0
+, (NP -> <gen519099 #N#>)[0] (1, 1)e0
+, (NP -> <gen519099 #N# gen688425>)[0] (1, 1)e0
+, (NP -> <#DET# #N#>)[0] (1, 1)e0
+, (NP -> <#DET# #N# gen688425>)[0] (1, 1)e0
+, (NP -> <#DET# gen519099 #N#>)[0] (1, 1)e0
+, (NP -> <#DET# gen519099 #N# gen688425>)[0] (1, 1)e0
+, (NP -> <#PRON#>)[0] (1, 1)e0
+, (root -> rootS)[1] (0, 1)e3 //why is this not in only 2 errors then?
+, (gen88032 -> <Adverbial>)[1] (0, 1)e1
+, (gen88032 -> <Adverbial gen88032>)[1] (0, 1)e1
+, (S -> <Subj Pred #.#>)[1] (0, 1)e0 //OK! MON, DIS MAXIMO CUL!
+, (Verbal -> <#VT# DObj>)[2] (0, 1)e1
+, (Verbal -> <#VG# DObj IObj>)[2] (0, 1)e1
+, (Verbal -> <#VC# DObj OC>)[2] (0, 1)e1
+, (Verbal -> <#VG# IObj DObj>)[2] (0, 1)e1
+, (Verbal -> <#VL# PredNom>)[2] (0, 1)e1
+, (Verbal -> <#BE# PredNom>)[2] (0, 1)e1
+, (IObj -> <Prep>)[1] (0, 1)e1
+, (Adverbial -> <Prep>)[1] (0, 1)e1
+, (Pred -> <VP>)[1] (0, 1)e1
+, (gen88032 -> <Adverbial>)[0] (1, 1)e0
+, (gen88032 -> <Adverbial gen88032>)[0] (1, 1)e0
+, (Prep -> <#PREP# NP>)[0] (1, 1)e0
+, (VP -> <Verbal gen88032>)[2] (0, 1)e2
+, (gen88032 -> <Adverbial gen88032>)[2] (0, 1)e2
+, (Pred -> <VP>)[0] (1, 1)e0
+, (OC -> <PredAdj>)[0] (1, 1)e0
+, (OC -> <PredNom>)[0] (1, 1)e0
+, (S -> <Subj Pred #.#>)[2] (0, 1)e2
+, (Adverbial -> <#ADV#>)[0] (1, 1)e0
+, (Adverbial -> <Prep>)[0] (1, 1)e0
+, (VP -> <Verbal>)[0] (1, 1)e0
+, (VP -> <Verbal gen88032>)[0] (1, 1)e0
+, (Verbal -> <#VT# DObj>)[0] (1, 1)e0
+, (Verbal -> <#VT# gen376234 DObj>)[0] (1, 1)e0
+, (Verbal -> <#VI#>)[0] (1, 1)e0
+, (Verbal -> <#VI# gen771213>)[0] (1, 1)e0
+, (Verbal -> <#VG# IObj DObj>)[0] (1, 1)e0
+, (Verbal -> <#VG# gen62923 IObj DObj>)[0] (1, 1)e0
+, (Verbal -> <#VG# DObj IObj>)[0] (1, 1)e0
+, (Verbal -> <#VG# gen600372 DObj IObj>)[0] (1, 1)e0
+, (Verbal -> <#VC# DObj OC>)[0] (1, 1)e0
+, (Verbal -> <#VC# gen511950 DObj OC>)[0] (1, 1)e0
+, (Verbal -> <#VL# PredAdj>)[0] (1, 1)e0
+, (Verbal -> <#VL# PredNom>)[0] (1, 1)e0
+, (Verbal -> <#VL# gen87352 PredAdj>)[0] (1, 1)e0
+, (Verbal -> <#VL# gen87352 PredNom>)[0] (1, 1)e0
+, (Verbal -> <#BE# PredAdj>)[0] (1, 1)e0
+, (Verbal -> <#BE# PredNom>)[0] (1, 1)e0
+, (Verbal -> <#BE# gen19007 PredAdj>)[0] (1, 1)e0
+, (Verbal -> <#BE# gen19007 PredNom>)[0] (1, 1)e0
+], XXCOL2XX [(N -> <#N#>)[1] (1, 2)e1
+, (DET -> <#DET#>)[1] (1, 2)e1
+, (PRON -> <#PRON#>)[1] (1, 2)e1
+, (ADJ -> <#ADJ#>)[1] (1, 2)e1
+, (VT -> <#VT#>)[1] (1, 2)e1
+, (VI -> <#VI#>)[1] (1, 2)e1
+, (VG -> <#VG#>)[1] (1, 2)e1
+, (VC -> <#VC#>)[1] (1, 2)e1
+, (VL -> <#VL#>)[1] (1, 2)e1
+, (BE -> <#BE#>)[1] (1, 2)e0 //again, excellent initial recognition
+, (PREP -> <#PREP#>)[1] (1, 2)e1
+, (. -> <#.#>)[1] (1, 2)e1
+, (ADV -> <#ADV#>)[1] (1, 2)e1
+, (N -> <#N#>)[0] (2, 2)e1
+, (DET -> <#DET#>)[0] (2, 2)e1
+, (PRON -> <#PRON#>)[0] (2, 2)e1
+, (ADJ -> <#ADJ#>)[0] (2, 2)e1
+, (VT -> <#VT#>)[0] (2, 2)e1
+, (VI -> <#VI#>)[0] (2, 2)e1
+, (VG -> <#VG#>)[0] (2, 2)e1
+, (VC -> <#VC#>)[0] (2, 2)e1
+, (VL -> <#VL#>)[0] (2, 2)e1
+, (BE -> <#BE#>)[0] (2, 2)e1
+, (PREP -> <#PREP#>)[0] (2, 2)e1
+, (. -> <#.#>)[0] (2, 2)e1
+, (ADV -> <#ADV#>)[0] (2, 2)e1
+, (N -> <#N#>)[1] (2, 2)e1
+, (DET -> <#DET#>)[1] (2, 2)e1
+, (PRON -> <#PRON#>)[1] (2, 2)e1
+, (ADJ -> <#ADJ#>)[1] (2, 2)e1
+, (VT -> <#VT#>)[1] (2, 2)e1
+, (VI -> <#VI#>)[1] (2, 2)e1
+, (VG -> <#VG#>)[1] (2, 2)e1
+, (VC -> <#VC#>)[1] (2, 2)e1
+, (VL -> <#VL#>)[1] (2, 2)e1
+, (BE -> <#BE#>)[1] (2, 2)e1
+, (PREP -> <#PREP#>)[1] (2, 2)e1
+, (. -> <#.#>)[1] (2, 2)e1
+, (ADV -> <#ADV#>)[1] (2, 2)e1
+, (NP -> <#DET# #N#>)[2] (0, 2)e2
+, (NP -> <#DET# #N# gen688425>)[2] (0, 2)e2
+, (gen688425 -> <#N#>)[1] (1, 2)e1
+, (gen688425 -> <#N# gen688425>)[1] (1, 2)e1
+, (NP -> <gen519099 #N#>)[2] (0, 2)e2
+, (NP -> <gen519099 #N# gen688425>)[2] (0, 2)e2
+, (NP -> <#DET# gen519099 #N#>)[3] (0, 2)e3
+, (NP -> <#DET# gen519099 #N# gen688425>)[3] (0, 2)e3
+, (NP -> <#N#>)[1] (1, 2)e1
+, (NP -> <#N# gen688425>)[1] (1, 2)e1
+, (NP -> <#DET# #N#>)[1] (1, 2)e1
+, (NP -> <#DET# #N# gen688425>)[1] (1, 2)e1
+, (NP -> <#DET# gen519099 #N#>)[1] (1, 2)e1
+, (NP -> <#DET# gen519099 #N# gen688425>)[1] (1, 2)e1
+, (NP -> <#PRON#>)[1] (1, 2)e1
+, (gen519099 -> <#ADJ#>)[1] (1, 2)e1
+, (gen519099 -> <#ADJ# gen519099>)[1] (1, 2)e1
+, (PredAdj -> <#ADJ#>)[1] (1, 2)e1
+, (gen376234 -> <#VT#>)[1] (1, 2)e1
+, (gen376234 -> <#VT# gen376234>)[1] (1, 2)e1
+, (Verbal -> <#VT# DObj>)[1] (1, 2)e1
+, (Verbal -> <#VT# gen376234 DObj>)[1] (1, 2)e1
+, (gen771213 -> <#VI#>)[1] (1, 2)e1
+, (gen771213 -> <#VI# gen771213>)[1] (1, 2)e1
+, (Verbal -> <#VI#>)[1] (1, 2)e1
+, (Verbal -> <#VI# gen771213>)[1] (1, 2)e1
+, (gen62923 -> <#VG#>)[1] (1, 2)e1
+, (gen62923 -> <#VG# gen62923>)[1] (1, 2)e1
+, (gen600372 -> <#VG#>)[1] (1, 2)e1
+, (gen600372 -> <#VG# gen600372>)[1] (1, 2)e1
+, (Verbal -> <#VG# IObj DObj>)[1] (1, 2)e1
+, (Verbal -> <#VG# gen62923 IObj DObj>)[1] (1, 2)e1
+, (Verbal -> <#VG# DObj IObj>)[1] (1, 2)e1
+, (Verbal -> <#VG# gen600372 DObj IObj>)[1] (1, 2)e1
+, (gen511950 -> <#VC#>)[1] (1, 2)e1
+, (gen511950 -> <#VC# gen511950>)[1] (1, 2)e1
+, (Verbal -> <#VC# DObj OC>)[1] (1, 2)e1
+, (Verbal -> <#VC# gen511950 DObj OC>)[1] (1, 2)e1
+, (gen87352 -> <#VL#>)[1] (1, 2)e1
+, (gen87352 -> <#VL# gen87352>)[1] (1, 2)e1
+, (Verbal -> <#VL# PredAdj>)[1] (1, 2)e1
+, (Verbal -> <#VL# PredNom>)[1] (1, 2)e1
+, (Verbal -> <#VL# gen87352 PredAdj>)[1] (1, 2)e1
+, (Verbal -> <#VL# gen87352 PredNom>)[1] (1, 2)e1
+, (gen19007 -> <#BE#>)[1] (1, 2)e0
+, (gen19007 -> <#BE# gen19007>)[1] (1, 2)e0
+, (Verbal -> <#BE# PredAdj>)[1] (1, 2)e0 //YA MON!
+, (Verbal -> <#BE# PredNom>)[1] (1, 2)e0 //YA MON!
+, (Verbal -> <#BE# gen19007 PredAdj>)[1] (1, 2)e0 //OK MAXIMO BENE
+, (Verbal -> <#BE# gen19007 PredNom>)[1] (1, 2)e0 //BENE MON
+, (Prep -> <#PREP# NP>)[1] (1, 2)e1
+, (S -> <Subj Pred #.#>)[3] (0, 2)e3
+, (Adverbial -> <#ADV#>)[1] (1, 2)e1
+, (NP -> <#DET# #N#>)[2] (1, 2)e2
+, (NP -> <#DET# #N# gen688425>)[2] (1, 2)e2
+, (Subj -> <NP>)[1] (0, 2)e2
+, (DObj -> <NP>)[1] (0, 2)e2
+, (IObj -> <NP>)[1] (0, 2)e2
+, (PredNom -> <NP>)[1] (0, 2)e2
+, (Prep -> <#PREP# NP>)[2] (0, 2)e3
+, (gen688425 -> <#N#>)[0] (2, 2)e0
+, (gen688425 -> <#N# gen688425>)[0] (2, 2)e0
+, (NP -> <#N# gen688425>)[2] (0, 2)e1
+, (NP -> <#DET# #N# gen688425>)[3] (0, 2)e2
+, (gen688425 -> <#N# gen688425>)[2] (0, 2)e1
+, (NP -> <gen519099 #N# gen688425>)[3] (0, 2)e2
+, (NP -> <#DET# gen519099 #N# gen688425>)[4] (0, 2)e3
+, (DObj -> <NP>)[1] (1, 2)e1
+, (IObj -> <NP>)[1] (1, 2)e1
+, (PredNom -> <NP>)[1] (1, 2)e1
+, (gen519099 -> <#ADJ#>)[0] (2, 2)e0
+, (gen519099 -> <#ADJ# gen519099>)[0] (2, 2)e0
+, (NP -> <#DET# gen519099 #N#>)[2] (0, 2)e2
+, (NP -> <#DET# gen519099 #N# gen688425>)[2] (0, 2)e2
+, (gen519099 -> <#ADJ# gen519099>)[2] (0, 2)e2
+, (NP -> <gen519099 #N#>)[1] (1, 2)e1
+, (NP -> <gen519099 #N# gen688425>)[1] (1, 2)e1
+, (Verbal -> <#VL# PredAdj>)[2] (0, 2)e2
+, (Verbal -> <#BE# PredAdj>)[2] (0, 2)e2
+, (Verbal -> <#VL# gen87352 PredAdj>)[3] (0, 2)e3
+, (Verbal -> <#BE# gen19007 PredAdj>)[3] (0, 2)e3
+, (OC -> <PredAdj>)[1] (1, 2)e1
+, (Verbal -> <#VT# gen376234 DObj>)[2] (0, 2)e2
+, (gen376234 -> <#VT# gen376234>)[2] (0, 2)e2
+, (gen376234 -> <#VT#>)[0] (2, 2)e0
+, (gen376234 -> <#VT# gen376234>)[0] (2, 2)e0
+, (DObj -> <NP>)[0] (2, 2)e0
+, (Verbal -> <#VI# gen771213>)[2] (0, 2)e2
+, (gen771213 -> <#VI# gen771213>)[2] (0, 2)e2
+, (gen771213 -> <#VI#>)[0] (2, 2)e0
+, (gen771213 -> <#VI# gen771213>)[0] (2, 2)e0
+, (VP -> <Verbal>)[1] (1, 2)e1
+, (VP -> <Verbal gen88032>)[1] (1, 2)e1
+, (Verbal -> <#VG# gen62923 IObj DObj>)[2] (0, 2)e2
+, (gen62923 -> <#VG# gen62923>)[2] (0, 2)e2
+, (gen62923 -> <#VG#>)[0] (2, 2)e0
+, (gen62923 -> <#VG# gen62923>)[0] (2, 2)e0
+, (Verbal -> <#VG# gen600372 DObj IObj>)[2] (0, 2)e2
+, (gen600372 -> <#VG# gen600372>)[2] (0, 2)e2
+, (gen600372 -> <#VG#>)[0] (2, 2)e0
+, (gen600372 -> <#VG# gen600372>)[0] (2, 2)e0
+, (IObj -> <NP>)[0] (2, 2)e0
+, (IObj -> <Prep>)[0] (2, 2)e0
+, (Verbal -> <#VC# gen511950 DObj OC>)[2] (0, 2)e2
+, (gen511950 -> <#VC# gen511950>)[2] (0, 2)e2
+, (gen511950 -> <#VC#>)[0] (2, 2)e0
+, (gen511950 -> <#VC# gen511950>)[0] (2, 2)e0
+, (Verbal -> <#VL# gen87352 PredAdj>)[2] (0, 2)e2
+, (Verbal -> <#VL# gen87352 PredNom>)[2] (0, 2)e2
+, (gen87352 -> <#VL# gen87352>)[2] (0, 2)e2
+, (gen87352 -> <#VL#>)[0] (2, 2)e0
+, (gen87352 -> <#VL# gen87352>)[0] (2, 2)e0
+, (PredAdj -> <#ADJ#>)[0] (2, 2)e0
+, (PredNom -> <NP>)[0] (2, 2)e0
+, (Verbal -> <#BE# gen19007 PredAdj>)[2] (0, 2)e1
+, (Verbal -> <#BE# gen19007 PredNom>)[2] (0, 2)e1
+, (gen19007 -> <#BE# gen19007>)[2] (0, 2)e1
+, (gen19007 -> <#BE#>)[0] (2, 2)e0
+, (gen19007 -> <#BE# gen19007>)[0] (2, 2)e0
+, (NP -> <#N#>)[0] (2, 2)e0
+, (NP -> <#N# gen688425>)[0] (2, 2)e0
+, (NP -> <gen519099 #N#>)[0] (2, 2)e0
+, (NP -> <gen519099 #N# gen688425>)[0] (2, 2)e0
+, (NP -> <#DET# #N#>)[0] (2, 2)e0
+, (NP -> <#DET# #N# gen688425>)[0] (2, 2)e0
+, (NP -> <#DET# gen519099 #N#>)[0] (2, 2)e0
+, (NP -> <#DET# gen519099 #N# gen688425>)[0] (2, 2)e0
+, (NP -> <#PRON#>)[0] (2, 2)e0
+, (root -> rootS)[1] (0, 2)e3 //same question, only in doubles...why isn't this down to one error?
+, (gen88032 -> <Adverbial>)[1] (1, 2)e1
+, (gen88032 -> <Adverbial gen88032>)[1] (1, 2)e1
+, (S -> <Subj Pred #.#>)[1] (0, 2)e2
+, (Verbal -> <#VT# DObj>)[2] (0, 2)e3
+, (Verbal -> <#VG# DObj IObj>)[2] (0, 2)e3
+, (Verbal -> <#VC# DObj OC>)[2] (0, 2)e3
+, (Verbal -> <#VG# IObj DObj>)[2] (0, 2)e3
+, (Verbal -> <#VL# PredNom>)[2] (0, 2)e3
+, (Verbal -> <#BE# PredNom>)[2] (0, 2)e3
+, (IObj -> <Prep>)[1] (0, 2)e3
+, (Adverbial -> <Prep>)[1] (0, 2)e3
+, (Verbal -> <#VT# gen376234 DObj>)[3] (0, 2)e3
+, (Verbal -> <#VG# gen600372 DObj IObj>)[3] (0, 2)e3
+, (Verbal -> <#VC# gen511950 DObj OC>)[3] (0, 2)e3
+, (Verbal -> <#VG# IObj DObj>)[3] (0, 2)e2
+, (Verbal -> <#VG# gen62923 IObj DObj>)[3] (0, 2)e3
+, (Verbal -> <#VG# DObj IObj>)[3] (0, 2)e2
+, (Verbal -> <#VL# gen87352 PredNom>)[3] (0, 2)e3
+, (Verbal -> <#BE# gen19007 PredNom>)[3] (0, 2)e3
+, (OC -> <PredNom>)[1] (1, 2)e1
+, (NP -> <gen519099 #N#>)[1] (0, 2)e2
+, (NP -> <gen519099 #N# gen688425>)[1] (0, 2)e2
+, (VP -> <Verbal>)[1] (0, 2)e2
+, (VP -> <Verbal gen88032>)[1] (0, 2)e2
+, (Verbal -> <#VC# DObj OC>)[3] (0, 2)e2
+, (Pred -> <VP>)[1] (1, 2)e1
+, (gen88032 -> <Adverbial>)[0] (2, 2)e0
+, (gen88032 -> <Adverbial gen88032>)[0] (2, 2)e0
+, (Prep -> <#PREP# NP>)[0] (2, 2)e0
+, (VP -> <Verbal gen88032>)[2] (0, 2)e2
+, (gen88032 -> <Adverbial gen88032>)[2] (0, 2)e2
+, (Pred -> <VP>)[0] (2, 2)e0
+, (OC -> <PredAdj>)[0] (2, 2)e0
+, (OC -> <PredNom>)[0] (2, 2)e0
+, (gen88032 -> <Adverbial>)[1] (0, 2)e3
+, (gen88032 -> <Adverbial gen88032>)[1] (0, 2)e3
+, (Pred -> <VP>)[1] (0, 2)e2
+, (S -> <Subj Pred #.#>)[2] (0, 2)e1
+, (Adverbial -> <#ADV#>)[0] (2, 2)e0
+, (Adverbial -> <Prep>)[0] (2, 2)e0
+, (VP -> <Verbal>)[0] (2, 2)e0
+, (VP -> <Verbal gen88032>)[0] (2, 2)e0
+, (Verbal -> <#VT# DObj>)[0] (2, 2)e0
+, (Verbal -> <#VT# gen376234 DObj>)[0] (2, 2)e0
+, (Verbal -> <#VI#>)[0] (2, 2)e0
+, (Verbal -> <#VI# gen771213>)[0] (2, 2)e0
+, (Verbal -> <#VG# IObj DObj>)[0] (2, 2)e0
+, (Verbal -> <#VG# gen62923 IObj DObj>)[0] (2, 2)e0
+, (Verbal -> <#VG# DObj IObj>)[0] (2, 2)e0
+, (Verbal -> <#VG# gen600372 DObj IObj>)[0] (2, 2)e0
+, (Verbal -> <#VC# DObj OC>)[0] (2, 2)e0
+, (Verbal -> <#VC# gen511950 DObj OC>)[0] (2, 2)e0
+, (Verbal -> <#VL# PredAdj>)[0] (2, 2)e0
+, (Verbal -> <#VL# PredNom>)[0] (2, 2)e0
+, (Verbal -> <#VL# gen87352 PredAdj>)[0] (2, 2)e0
+, (Verbal -> <#VL# gen87352 PredNom>)[0] (2, 2)e0
+, (Verbal -> <#BE# PredAdj>)[0] (2, 2)e0
+, (Verbal -> <#BE# PredNom>)[0] (2, 2)e0
+, (Verbal -> <#BE# gen19007 PredAdj>)[0] (2, 2)e0
+, (Verbal -> <#BE# gen19007 PredNom>)[0] (2, 2)e0
+], XXCOL3XX [(N -> <#N#>)[1] (2, 3)e1
+, (DET -> <#DET#>)[1] (2, 3)e1
+, (PRON -> <#PRON#>)[1] (2, 3)e1
+, (ADJ -> <#ADJ#>)[1] (2, 3)e0 //BE OK MON
+, (VT -> <#VT#>)[1] (2, 3)e1
+, (VI -> <#VI#>)[1] (2, 3)e1
+, (VG -> <#VG#>)[1] (2, 3)e1
+, (VC -> <#VC#>)[1] (2, 3)e1
+, (VL -> <#VL#>)[1] (2, 3)e1
+, (BE -> <#BE#>)[1] (2, 3)e1
+, (PREP -> <#PREP#>)[1] (2, 3)e1
+, (. -> <#.#>)[1] (2, 3)e1
+, (ADV -> <#ADV#>)[1] (2, 3)e1
+, (N -> <#N#>)[0] (3, 3)e1
+, (DET -> <#DET#>)[0] (3, 3)e1
+, (PRON -> <#PRON#>)[0] (3, 3)e1
+, (ADJ -> <#ADJ#>)[0] (3, 3)e1
+, (VT -> <#VT#>)[0] (3, 3)e1
+, (VI -> <#VI#>)[0] (3, 3)e1
+, (VG -> <#VG#>)[0] (3, 3)e1
+, (VC -> <#VC#>)[0] (3, 3)e1
+, (VL -> <#VL#>)[0] (3, 3)e1
+, (BE -> <#BE#>)[0] (3, 3)e1
+, (PREP -> <#PREP#>)[0] (3, 3)e1
+, (. -> <#.#>)[0] (3, 3)e1
+, (ADV -> <#ADV#>)[0] (3, 3)e1
+, (N -> <#N#>)[1] (3, 3)e1
+, (DET -> <#DET#>)[1] (3, 3)e1
+, (PRON -> <#PRON#>)[1] (3, 3)e1
+, (ADJ -> <#ADJ#>)[1] (3, 3)e1
+, (VT -> <#VT#>)[1] (3, 3)e1
+, (VI -> <#VI#>)[1] (3, 3)e1
+, (VG -> <#VG#>)[1] (3, 3)e1
+, (VC -> <#VC#>)[1] (3, 3)e1
+, (VL -> <#VL#>)[1] (3, 3)e1
+, (BE -> <#BE#>)[1] (3, 3)e1
+, (PREP -> <#PREP#>)[1] (3, 3)e1
+, (. -> <#.#>)[1] (3, 3)e1
+, (ADV -> <#ADV#>)[1] (3, 3)e1
+, (NP -> <#DET# #N#>)[2] (1, 3)e2
+, (NP -> <#DET# #N# gen688425>)[2] (1, 3)e2
+, (gen688425 -> <#N#>)[1] (2, 3)e1
+, (gen688425 -> <#N# gen688425>)[1] (2, 3)e1
+, (NP -> <#DET# gen519099 #N#>)[3] (0, 3)e3
+, (NP -> <#DET# gen519099 #N# gen688425>)[3] (0, 3)e3
+, (NP -> <gen519099 #N#>)[2] (1, 3)e2
+, (NP -> <gen519099 #N# gen688425>)[2] (1, 3)e2
+, (NP -> <#N#>)[1] (2, 3)e1
+, (NP -> <#N# gen688425>)[1] (2, 3)e1
+, (NP -> <gen519099 #N#>)[2] (0, 3)e3
+, (NP -> <gen519099 #N# gen688425>)[2] (0, 3)e3
+, (NP -> <#DET# #N#>)[1] (2, 3)e1
+, (NP -> <#DET# #N# gen688425>)[1] (2, 3)e1
+, (NP -> <#DET# gen519099 #N#>)[1] (2, 3)e1
+, (NP -> <#DET# gen519099 #N# gen688425>)[1] (2, 3)e1
+, (NP -> <#PRON#>)[1] (2, 3)e1
+, (gen519099 -> <#ADJ#>)[1] (2, 3)e0
+, (gen519099 -> <#ADJ# gen519099>)[1] (2, 3)e0
+, (PredAdj -> <#ADJ#>)[1] (2, 3)e0 //YA OK
+, (gen376234 -> <#VT#>)[1] (2, 3)e1
+, (gen376234 -> <#VT# gen376234>)[1] (2, 3)e1
+, (Verbal -> <#VT# DObj>)[1] (2, 3)e1
+, (Verbal -> <#VT# gen376234 DObj>)[1] (2, 3)e1
+, (gen771213 -> <#VI#>)[1] (2, 3)e1
+, (gen771213 -> <#VI# gen771213>)[1] (2, 3)e1
+, (Verbal -> <#VI#>)[1] (2, 3)e1
+, (Verbal -> <#VI# gen771213>)[1] (2, 3)e1
+, (gen62923 -> <#VG#>)[1] (2, 3)e1
+, (gen62923 -> <#VG# gen62923>)[1] (2, 3)e1
+, (gen600372 -> <#VG#>)[1] (2, 3)e1
+, (gen600372 -> <#VG# gen600372>)[1] (2, 3)e1
+, (Verbal -> <#VG# IObj DObj>)[1] (2, 3)e1
+, (Verbal -> <#VG# gen62923 IObj DObj>)[1] (2, 3)e1
+, (Verbal -> <#VG# DObj IObj>)[1] (2, 3)e1
+, (Verbal -> <#VG# gen600372 DObj IObj>)[1] (2, 3)e1
+, (gen511950 -> <#VC#>)[1] (2, 3)e1
+, (gen511950 -> <#VC# gen511950>)[1] (2, 3)e1
+, (Verbal -> <#VC# DObj OC>)[1] (2, 3)e1
+, (Verbal -> <#VC# gen511950 DObj OC>)[1] (2, 3)e1
+, (gen87352 -> <#VL#>)[1] (2, 3)e1
+, (gen87352 -> <#VL# gen87352>)[1] (2, 3)e1
+, (Verbal -> <#VL# PredAdj>)[1] (2, 3)e1
+, (Verbal -> <#VL# PredNom>)[1] (2, 3)e1
+, (Verbal -> <#VL# gen87352 PredAdj>)[1] (2, 3)e1
+, (Verbal -> <#VL# gen87352 PredNom>)[1] (2, 3)e1
+, (gen19007 -> <#BE#>)[1] (2, 3)e1
+, (gen19007 -> <#BE# gen19007>)[1] (2, 3)e1
+, (Verbal -> <#BE# PredAdj>)[1] (2, 3)e1
+, (Verbal -> <#BE# PredNom>)[1] (2, 3)e1
+, (Verbal -> <#BE# gen19007 PredAdj>)[1] (2, 3)e1
+, (Verbal -> <#BE# gen19007 PredNom>)[1] (2, 3)e1
+, (Prep -> <#PREP# NP>)[1] (2, 3)e1
+, (S -> <Subj Pred #.#>)[3] (0, 3)e2
+, (Adverbial -> <#ADV#>)[1] (2, 3)e1
+, (NP -> <#DET# #N#>)[2] (2, 3)e2
+, (NP -> <#DET# #N# gen688425>)[2] (2, 3)e2
+, (Prep -> <#PREP# NP>)[2] (0, 3)e3
+, (DObj -> <NP>)[1] (1, 3)e2
+, (IObj -> <NP>)[1] (1, 3)e2
+, (PredNom -> <NP>)[1] (1, 3)e2
+, (gen688425 -> <#N#>)[0] (3, 3)e0
+, (gen688425 -> <#N# gen688425>)[0] (3, 3)e0
+, (NP -> <#DET# #N# gen688425>)[3] (0, 3)e3
+, (gen688425 -> <#N# gen688425>)[2] (1, 3)e2
+, (NP -> <gen519099 #N# gen688425>)[3] (0, 3)e3
+, (NP -> <#DET# gen519099 #N# gen688425>)[4] (0, 3)e4
+, (NP -> <#N# gen688425>)[2] (1, 3)e2
+, (NP -> <#DET# #N# gen688425>)[3] (1, 3)e3
+, (Subj -> <NP>)[1] (0, 3)e3
+, (DObj -> <NP>)[1] (0, 3)e3
+, (IObj -> <NP>)[1] (0, 3)e3
+, (PredNom -> <NP>)[1] (0, 3)e3
+, (Prep -> <#PREP# NP>)[2] (1, 3)e2
+, (DObj -> <NP>)[1] (2, 3)e1
+, (IObj -> <NP>)[1] (2, 3)e1
+, (PredNom -> <NP>)[1] (2, 3)e1
+, (gen519099 -> <#ADJ#>)[0] (3, 3)e0
+, (gen519099 -> <#ADJ# gen519099>)[0] (3, 3)e0
+, (NP -> <#DET# gen519099 #N#>)[2] (1, 3)e1
+, (NP -> <#DET# gen519099 #N# gen688425>)[2] (1, 3)e1
+, (gen519099 -> <#ADJ# gen519099>)[2] (1, 3)e1
+, (NP -> <gen519099 #N#>)[1] (2, 3)e0
+, (NP -> <gen519099 #N# gen688425>)[1] (2, 3)e0
+, (Verbal -> <#VL# PredAdj>)[2] (1, 3)e1
+, (Verbal -> <#BE# PredAdj>)[2] (1, 3)e0 //SO DEA MON
+, (Verbal -> <#VL# gen87352 PredAdj>)[3] (0, 3)e2
+, (Verbal -> <#BE# gen19007 PredAdj>)[3] (0, 3)e1
+, (OC -> <PredAdj>)[1] (2, 3)e0
+, (gen376234 -> <#VT# gen376234>)[2] (1, 3)e2
+, (Verbal -> <#VT# gen376234 DObj>)[2] (1, 3)e2
+, (gen376234 -> <#VT#>)[0] (3, 3)e0
+, (gen376234 -> <#VT# gen376234>)[0] (3, 3)e0
+, (DObj -> <NP>)[0] (3, 3)e0
+, (gen771213 -> <#VI# gen771213>)[2] (1, 3)e2
+, (Verbal -> <#VI# gen771213>)[2] (1, 3)e2
+, (gen771213 -> <#VI#>)[0] (3, 3)e0
+, (gen771213 -> <#VI# gen771213>)[0] (3, 3)e0
+, (VP -> <Verbal>)[1] (2, 3)e1
+, (VP -> <Verbal gen88032>)[1] (2, 3)e1
+, (gen62923 -> <#VG# gen62923>)[2] (1, 3)e2
+, (Verbal -> <#VG# gen62923 IObj DObj>)[2] (1, 3)e2
+, (gen62923 -> <#VG#>)[0] (3, 3)e0
+, (gen62923 -> <#VG# gen62923>)[0] (3, 3)e0
+, (gen600372 -> <#VG# gen600372>)[2] (1, 3)e2
+, (Verbal -> <#VG# gen600372 DObj IObj>)[2] (1, 3)e2
+, (gen600372 -> <#VG#>)[0] (3, 3)e0
+, (gen600372 -> <#VG# gen600372>)[0] (3, 3)e0
+, (IObj -> <NP>)[0] (3, 3)e0
+, (IObj -> <Prep>)[0] (3, 3)e0
+, (gen511950 -> <#VC# gen511950>)[2] (1, 3)e2
+, (Verbal -> <#VC# gen511950 DObj OC>)[2] (1, 3)e2
+, (gen511950 -> <#VC#>)[0] (3, 3)e0
+, (gen511950 -> <#VC# gen511950>)[0] (3, 3)e0
+, (gen87352 -> <#VL# gen87352>)[2] (1, 3)e2
+, (Verbal -> <#VL# gen87352 PredAdj>)[2] (1, 3)e2
+, (Verbal -> <#VL# gen87352 PredNom>)[2] (1, 3)e2
+, (gen87352 -> <#VL#>)[0] (3, 3)e0
+, (gen87352 -> <#VL# gen87352>)[0] (3, 3)e0
+, (PredAdj -> <#ADJ#>)[0] (3, 3)e0
+, (PredNom -> <NP>)[0] (3, 3)e0
+, (gen19007 -> <#BE# gen19007>)[2] (1, 3)e1
+, (Verbal -> <#BE# gen19007 PredAdj>)[2] (1, 3)e1
+, (Verbal -> <#BE# gen19007 PredNom>)[2] (1, 3)e1
+, (gen19007 -> <#BE#>)[0] (3, 3)e0
+, (gen19007 -> <#BE# gen19007>)[0] (3, 3)e0
+, (NP -> <#N#>)[0] (3, 3)e0
+, (NP -> <#N# gen688425>)[0] (3, 3)e0
+, (NP -> <gen519099 #N#>)[0] (3, 3)e0
+, (NP -> <gen519099 #N# gen688425>)[0] (3, 3)e0
+, (NP -> <#DET# #N#>)[0] (3, 3)e0
+, (NP -> <#DET# #N# gen688425>)[0] (3, 3)e0
+, (NP -> <#DET# gen519099 #N#>)[0] (3, 3)e0
+, (NP -> <#DET# gen519099 #N# gen688425>)[0] (3, 3)e0
+, (NP -> <#PRON#>)[0] (3, 3)e0
+, (root -> rootS)[1] (0, 3)e2 //ah ha! at least we're down to 2 errors, which (by my calculations) should be only 1 error...
+, (gen88032 -> <Adverbial>)[1] (2, 3)e1
+, (gen88032 -> <Adverbial gen88032>)[1] (2, 3)e1
+, (IObj -> <Prep>)[1] (0, 3)e3
+, (Adverbial -> <Prep>)[1] (0, 3)e3
+, (Verbal -> <#VT# DObj>)[2] (0, 3)e3
+, (Verbal -> <#VG# DObj IObj>)[2] (0, 3)e3
+, (Verbal -> <#VC# DObj OC>)[2] (0, 3)e3
+, (Verbal -> <#VT# gen376234 DObj>)[3] (0, 3)e4
+, (Verbal -> <#VG# gen600372 DObj IObj>)[3] (0, 3)e4
+, (Verbal -> <#VC# gen511950 DObj OC>)[3] (0, 3)e4
+, (Verbal -> <#VG# IObj DObj>)[3] (0, 3)e3
+, (Verbal -> <#VG# IObj DObj>)[2] (0, 3)e3
+, (Verbal -> <#VG# gen62923 IObj DObj>)[3] (0, 3)e4
+, (Verbal -> <#VG# DObj IObj>)[3] (0, 3)e3
+, (Verbal -> <#VL# PredNom>)[2] (0, 3)e3
+, (Verbal -> <#BE# PredNom>)[2] (0, 3)e3
+, (Verbal -> <#VL# gen87352 PredNom>)[3] (0, 3)e4
+, (Verbal -> <#BE# gen19007 PredNom>)[3] (0, 3)e4
+, (OC -> <PredNom>)[1] (1, 3)e2
+, (NP -> <#N# gen688425>)[2] (0, 3)e2
+, (gen688425 -> <#N# gen688425>)[2] (0, 3)e2
+, (S -> <Subj Pred #.#>)[1] (0, 3)e3
+, (IObj -> <Prep>)[1] (1, 3)e2
+, (Adverbial -> <Prep>)[1] (1, 3)e2
+, (Verbal -> <#VT# DObj>)[2] (1, 3)e2
+, (Verbal -> <#VG# DObj IObj>)[2] (1, 3)e2
+, (Verbal -> <#VC# DObj OC>)[2] (1, 3)e2
+, (Verbal -> <#VG# gen62923 IObj DObj>)[4] (0, 3)e4
+, (Verbal -> <#VG# IObj DObj>)[2] (1, 3)e2
+, (Verbal -> <#VG# gen600372 DObj IObj>)[4] (0, 3)e4
+, (Verbal -> <#VL# PredNom>)[2] (1, 3)e2
+, (Verbal -> <#BE# PredNom>)[2] (1, 3)e1
+, (OC -> <PredNom>)[1] (2, 3)e1
+, (NP -> <#DET# gen519099 #N#>)[2] (0, 3)e2
+, (NP -> <#DET# gen519099 #N# gen688425>)[2] (0, 3)e2
+, (gen519099 -> <#ADJ# gen519099>)[2] (0, 3)e2
+, (NP -> <gen519099 #N#>)[1] (1, 3)e1
+, (NP -> <gen519099 #N# gen688425>)[1] (1, 3)e1
+, (VP -> <Verbal>)[1] (1, 3)e1 //WHY 1 ERA MON? something must have got there first...and enq won't replace it cause it doesn't know errors
+, (VP -> <Verbal gen88032>)[1] (1, 3)e1
+, (VP -> <Verbal>)[1] (0, 3)e2
+, (VP -> <Verbal gen88032>)[1] (0, 3)e2
+, (Verbal -> <#VC# DObj OC>)[3] (0, 3)e3
+, (Verbal -> <#VC# gen511950 DObj OC>)[4] (0, 3)e3
+, (Verbal -> <#VT# gen376234 DObj>)[2] (0, 3)e3
+, (gen376234 -> <#VT# gen376234>)[2] (0, 3)e3
+, (Verbal -> <#VI# gen771213>)[2] (0, 3)e3
+, (gen771213 -> <#VI# gen771213>)[2] (0, 3)e3
+, (Pred -> <VP>)[1] (2, 3)e1
+, (gen88032 -> <Adverbial>)[0] (3, 3)e0
+, (gen88032 -> <Adverbial gen88032>)[0] (3, 3)e0
+, (Verbal -> <#VG# gen62923 IObj DObj>)[2] (0, 3)e3
+, (gen62923 -> <#VG# gen62923>)[2] (0, 3)e3
+, (Verbal -> <#VG# gen600372 DObj IObj>)[2] (0, 3)e3
+, (gen600372 -> <#VG# gen600372>)[2] (0, 3)e3
+, (Prep -> <#PREP# NP>)[0] (3, 3)e0
+, (Verbal -> <#VC# gen511950 DObj OC>)[2] (0, 3)e3
+, (gen511950 -> <#VC# gen511950>)[2] (0, 3)e3
+, (Verbal -> <#VL# gen87352 PredAdj>)[2] (0, 3)e3
+, (Verbal -> <#VL# gen87352 PredNom>)[2] (0, 3)e3
+, (gen87352 -> <#VL# gen87352>)[2] (0, 3)e3
+, (Verbal -> <#BE# gen19007 PredAdj>)[2] (0, 3)e2
+, (Verbal -> <#BE# gen19007 PredNom>)[2] (0, 3)e2
+, (gen19007 -> <#BE# gen19007>)[2] (0, 3)e2
+, (VP -> <Verbal gen88032>)[2] (1, 3)e2
+, (gen88032 -> <Adverbial gen88032>)[2] (1, 3)e2
+, (VP -> <Verbal gen88032>)[2] (0, 3)e3
+, (gen88032 -> <Adverbial gen88032>)[2] (0, 3)e4
+, (gen88032 -> <Adverbial>)[1] (0, 3)e3
+, (gen88032 -> <Adverbial gen88032>)[1] (0, 3)e3
+, (OC -> <PredAdj>)[0] (3, 3)e0
+, (OC -> <PredNom>)[0] (3, 3)e0
+, (Pred -> <VP>)[0] (3, 3)e0
+, (gen88032 -> <Adverbial>)[1] (1, 3)e2
+, (gen88032 -> <Adverbial gen88032>)[1] (1, 3)e2
+, (NP -> <gen519099 #N#>)[1] (0, 3)e2
+, (NP -> <gen519099 #N# gen688425>)[1] (0, 3)e2
+, (Pred -> <VP>)[1] (1, 3)e1 //PROPOGATED FROM PREVIOUS one
+, (Pred -> <VP>)[1] (0, 3)e2
+, (S -> <Subj Pred #.#>)[2] (0, 3)e3 //OK, now this is getting WEIRD. Why does this suddenly have error of 3?! did it (too) become enqueued from too early? Causing it to be forever orphaned from the more efficient alternative?
+, (Adverbial -> <#ADV#>)[0] (3, 3)e0
+, (Adverbial -> <Prep>)[0] (3, 3)e0
+, (VP -> <Verbal>)[0] (3, 3)e0
+, (VP -> <Verbal gen88032>)[0] (3, 3)e0
+, (Verbal -> <#VT# DObj>)[0] (3, 3)e0
+, (Verbal -> <#VT# gen376234 DObj>)[0] (3, 3)e0
+, (Verbal -> <#VI#>)[0] (3, 3)e0
+, (Verbal -> <#VI# gen771213>)[0] (3, 3)e0
+, (Verbal -> <#VG# IObj DObj>)[0] (3, 3)e0
+, (Verbal -> <#VG# gen62923 IObj DObj>)[0] (3, 3)e0
+, (Verbal -> <#VG# DObj IObj>)[0] (3, 3)e0
+, (Verbal -> <#VG# gen600372 DObj IObj>)[0] (3, 3)e0
+, (Verbal -> <#VC# DObj OC>)[0] (3, 3)e0
+, (Verbal -> <#VC# gen511950 DObj OC>)[0] (3, 3)e0
+, (Verbal -> <#VL# PredAdj>)[0] (3, 3)e0
+, (Verbal -> <#VL# PredNom>)[0] (3, 3)e0
+, (Verbal -> <#VL# gen87352 PredAdj>)[0] (3, 3)e0
+, (Verbal -> <#VL# gen87352 PredNom>)[0] (3, 3)e0
+, (Verbal -> <#BE# PredAdj>)[0] (3, 3)e0
+, (Verbal -> <#BE# PredNom>)[0] (3, 3)e0
+, (Verbal -> <#BE# gen19007 PredAdj>)[0] (3, 3)e0
+, (Verbal -> <#BE# gen19007 PredNom>)[0] (3, 3)e0
+], XXCOL4XX [(N -> <#N#>)[1] (3, 4)e1
+, (DET -> <#DET#>)[1] (3, 4)e1
+, (PRON -> <#PRON#>)[1] (3, 4)e1
+, (ADJ -> <#ADJ#>)[1] (3, 4)e1
+, (VT -> <#VT#>)[1] (3, 4)e1
+, (VI -> <#VI#>)[1] (3, 4)e1
+, (VG -> <#VG#>)[1] (3, 4)e1
+, (VC -> <#VC#>)[1] (3, 4)e1
+, (VL -> <#VL#>)[1] (3, 4)e1
+, (BE -> <#BE#>)[1] (3, 4)e1
+, (PREP -> <#PREP#>)[1] (3, 4)e1
+, (. -> <#.#>)[1] (3, 4)e0 //CORRECT ... what happens when completer runs on this?
+, (ADV -> <#ADV#>)[1] (3, 4)e1
+, (N -> <#N#>)[0] (4, 4)e1
+, (DET -> <#DET#>)[0] (4, 4)e1
+, (PRON -> <#PRON#>)[0] (4, 4)e1
+, (ADJ -> <#ADJ#>)[0] (4, 4)e1
+, (VT -> <#VT#>)[0] (4, 4)e1
+, (VI -> <#VI#>)[0] (4, 4)e1
+, (VG -> <#VG#>)[0] (4, 4)e1
+, (VC -> <#VC#>)[0] (4, 4)e1
+, (VL -> <#VL#>)[0] (4, 4)e1
+, (BE -> <#BE#>)[0] (4, 4)e1
+, (PREP -> <#PREP#>)[0] (4, 4)e1
+, (. -> <#.#>)[0] (4, 4)e1
+, (ADV -> <#ADV#>)[0] (4, 4)e1
+, (NP -> <#DET# #N#>)[2] (2, 4)e2
+, (NP -> <#DET# #N# gen688425>)[2] (2, 4)e2
+, (gen688425 -> <#N#>)[1] (3, 4)e1
+, (gen688425 -> <#N# gen688425>)[1] (3, 4)e1
+, (NP -> <#DET# gen519099 #N#>)[3] (1, 4)e2
+, (NP -> <#DET# gen519099 #N# gen688425>)[3] (1, 4)e2
+, (NP -> <gen519099 #N#>)[2] (2, 4)e1
+, (NP -> <gen519099 #N# gen688425>)[2] (2, 4)e1
+, (NP -> <#N#>)[1] (3, 4)e1
+, (NP -> <#N# gen688425>)[1] (3, 4)e1
+, (NP -> <#DET# gen519099 #N#>)[3] (0, 4)e3
+, (NP -> <#DET# gen519099 #N# gen688425>)[3] (0, 4)e3
+, (NP -> <gen519099 #N#>)[2] (1, 4)e2
+, (NP -> <gen519099 #N# gen688425>)[2] (1, 4)e2
+, (NP -> <gen519099 #N#>)[2] (0, 4)e3
+, (NP -> <gen519099 #N# gen688425>)[2] (0, 4)e3
+, (NP -> <#DET# #N#>)[1] (3, 4)e1
+, (NP -> <#DET# #N# gen688425>)[1] (3, 4)e1
+, (NP -> <#DET# gen519099 #N#>)[1] (3, 4)e1
+, (NP -> <#DET# gen519099 #N# gen688425>)[1] (3, 4)e1
+, (NP -> <#PRON#>)[1] (3, 4)e1
+, (gen519099 -> <#ADJ#>)[1] (3, 4)e1
+, (gen519099 -> <#ADJ# gen519099>)[1] (3, 4)e1
+, (PredAdj -> <#ADJ#>)[1] (3, 4)e1
+, (gen376234 -> <#VT#>)[1] (3, 4)e1
+, (gen376234 -> <#VT# gen376234>)[1] (3, 4)e1
+, (Verbal -> <#VT# DObj>)[1] (3, 4)e1
+, (Verbal -> <#VT# gen376234 DObj>)[1] (3, 4)e1
+, (gen771213 -> <#VI#>)[1] (3, 4)e1
+, (gen771213 -> <#VI# gen771213>)[1] (3, 4)e1
+, (Verbal -> <#VI#>)[1] (3, 4)e1
+, (Verbal -> <#VI# gen771213>)[1] (3, 4)e1
+, (gen62923 -> <#VG#>)[1] (3, 4)e1
+, (gen62923 -> <#VG# gen62923>)[1] (3, 4)e1
+, (gen600372 -> <#VG#>)[1] (3, 4)e1
+, (gen600372 -> <#VG# gen600372>)[1] (3, 4)e1
+, (Verbal -> <#VG# IObj DObj>)[1] (3, 4)e1
+, (Verbal -> <#VG# gen62923 IObj DObj>)[1] (3, 4)e1
+, (Verbal -> <#VG# DObj IObj>)[1] (3, 4)e1
+, (Verbal -> <#VG# gen600372 DObj IObj>)[1] (3, 4)e1
+, (gen511950 -> <#VC#>)[1] (3, 4)e1
+, (gen511950 -> <#VC# gen511950>)[1] (3, 4)e1
+, (Verbal -> <#VC# DObj OC>)[1] (3, 4)e1
+, (Verbal -> <#VC# gen511950 DObj OC>)[1] (3, 4)e1
+, (gen87352 -> <#VL#>)[1] (3, 4)e1
+, (gen87352 -> <#VL# gen87352>)[1] (3, 4)e1
+, (Verbal -> <#VL# PredAdj>)[1] (3, 4)e1
+, (Verbal -> <#VL# PredNom>)[1] (3, 4)e1
+, (Verbal -> <#VL# gen87352 PredAdj>)[1] (3, 4)e1
+, (Verbal -> <#VL# gen87352 PredNom>)[1] (3, 4)e1
+, (gen19007 -> <#BE#>)[1] (3, 4)e1
+, (gen19007 -> <#BE# gen19007>)[1] (3, 4)e1
+, (Verbal -> <#BE# PredAdj>)[1] (3, 4)e1
+, (Verbal -> <#BE# PredNom>)[1] (3, 4)e1
+, (Verbal -> <#BE# gen19007 PredAdj>)[1] (3, 4)e1
+, (Verbal -> <#BE# gen19007 PredNom>)[1] (3, 4)e1
+, (Prep -> <#PREP# NP>)[1] (3, 4)e1
+, (S -> <Subj Pred #.#>)[3] (0, 4)e3 //now why did this have error of 3??
+, (Adverbial -> <#ADV#>)[1] (3, 4)e1
+, (Prep -> <#PREP# NP>)[2] (1, 4)e3
+, (DObj -> <NP>)[1] (2, 4)e2
+, (IObj -> <NP>)[1] (2, 4)e2
+, (PredNom -> <NP>)[1] (2, 4)e2
+, (gen688425 -> <#N#>)[0] (4, 4)e0
+, (gen688425 -> <#N# gen688425>)[0] (4, 4)e0
+, (NP -> <#DET# #N# gen688425>)[3] (1, 4)e3
+, (gen688425 -> <#N# gen688425>)[2] (2, 4)e2
+, (NP -> <#DET# gen519099 #N# gen688425>)[4] (0, 4)e4
+, (NP -> <gen519099 #N# gen688425>)[3] (1, 4)e3
+, (NP -> <#N# gen688425>)[2] (2, 4)e2
+, (NP -> <gen519099 #N# gen688425>)[3] (0, 4)e4
+, (NP -> <#DET# #N# gen688425>)[3] (2, 4)e3
+, (Prep -> <#PREP# NP>)[2] (0, 4)e3
+, (DObj -> <NP>)[1] (1, 4)e2
+, (IObj -> <NP>)[1] (1, 4)e2
+, (PredNom -> <NP>)[1] (1, 4)e2
+, (Prep -> <#PREP# NP>)[2] (2, 4)e2
+, (DObj -> <NP>)[1] (3, 4)e1
+, (IObj -> <NP>)[1] (3, 4)e1
+, (PredNom -> <NP>)[1] (3, 4)e1
+, (Subj -> <NP>)[1] (0, 4)e3
+, (DObj -> <NP>)[1] (0, 4)e3
+, (IObj -> <NP>)[1] (0, 4)e3
+, (PredNom -> <NP>)[1] (0, 4)e3
+, (gen519099 -> <#ADJ#>)[0] (4, 4)e0
+, (gen519099 -> <#ADJ# gen519099>)[0] (4, 4)e0
+, (NP -> <#DET# gen519099 #N#>)[2] (2, 4)e2
+, (NP -> <#DET# gen519099 #N# gen688425>)[2] (2, 4)e2
+, (gen519099 -> <#ADJ# gen519099>)[2] (2, 4)e1
+, (NP -> <gen519099 #N#>)[1] (3, 4)e1
+, (NP -> <gen519099 #N# gen688425>)[1] (3, 4)e1
+, (Verbal -> <#VL# PredAdj>)[2] (2, 4)e2
+, (Verbal -> <#BE# PredAdj>)[2] (2, 4)e2
+, (Verbal -> <#VL# gen87352 PredAdj>)[3] (1, 4)e3
+, (Verbal -> <#BE# gen19007 PredAdj>)[3] (1, 4)e2
+, (Verbal -> <#VL# gen87352 PredAdj>)[3] (0, 4)e4
+, (Verbal -> <#BE# gen19007 PredAdj>)[3] (0, 4)e3
+, (OC -> <PredAdj>)[1] (3, 4)e1
+, (gen376234 -> <#VT# gen376234>)[2] (2, 4)e2
+, (Verbal -> <#VT# gen376234 DObj>)[2] (2, 4)e2
+, (gen376234 -> <#VT#>)[0] (4, 4)e0
+, (gen376234 -> <#VT# gen376234>)[0] (4, 4)e0
+, (DObj -> <NP>)[0] (4, 4)e0
+, (gen771213 -> <#VI# gen771213>)[2] (2, 4)e2
+, (Verbal -> <#VI# gen771213>)[2] (2, 4)e2
+, (gen771213 -> <#VI#>)[0] (4, 4)e0
+, (gen771213 -> <#VI# gen771213>)[0] (4, 4)e0
+, (VP -> <Verbal>)[1] (3, 4)e1
+, (VP -> <Verbal gen88032>)[1] (3, 4)e1
+, (gen62923 -> <#VG# gen62923>)[2] (2, 4)e2
+, (Verbal -> <#VG# gen62923 IObj DObj>)[2] (2, 4)e2
+, (gen62923 -> <#VG#>)[0] (4, 4)e0
+, (gen62923 -> <#VG# gen62923>)[0] (4, 4)e0
+, (gen600372 -> <#VG# gen600372>)[2] (2, 4)e2
+, (Verbal -> <#VG# gen600372 DObj IObj>)[2] (2, 4)e2
+, (gen600372 -> <#VG#>)[0] (4, 4)e0
+, (gen600372 -> <#VG# gen600372>)[0] (4, 4)e0
+, (IObj -> <NP>)[0] (4, 4)e0
+, (IObj -> <Prep>)[0] (4, 4)e0
+, (gen511950 -> <#VC# gen511950>)[2] (2, 4)e2
+, (Verbal -> <#VC# gen511950 DObj OC>)[2] (2, 4)e2
+, (gen511950 -> <#VC#>)[0] (4, 4)e0
+, (gen511950 -> <#VC# gen511950>)[0] (4, 4)e0
+, (gen87352 -> <#VL# gen87352>)[2] (2, 4)e2
+, (Verbal -> <#VL# gen87352 PredAdj>)[2] (2, 4)e2
+, (Verbal -> <#VL# gen87352 PredNom>)[2] (2, 4)e2
+, (gen87352 -> <#VL#>)[0] (4, 4)e0
+, (gen87352 -> <#VL# gen87352>)[0] (4, 4)e0
+, (PredAdj -> <#ADJ#>)[0] (4, 4)e0
+, (PredNom -> <NP>)[0] (4, 4)e0
+, (gen19007 -> <#BE# gen19007>)[2] (2, 4)e2
+, (Verbal -> <#BE# gen19007 PredAdj>)[2] (2, 4)e2
+, (Verbal -> <#BE# gen19007 PredNom>)[2] (2, 4)e2
+, (gen19007 -> <#BE#>)[0] (4, 4)e0
+, (gen19007 -> <#BE# gen19007>)[0] (4, 4)e0
+, (NP -> <#N#>)[0] (4, 4)e0
+, (NP -> <#N# gen688425>)[0] (4, 4)e0
+, (NP -> <gen519099 #N#>)[0] (4, 4)e0
+, (NP -> <gen519099 #N# gen688425>)[0] (4, 4)e0
+, (NP -> <#DET# #N#>)[0] (4, 4)e0
+, (NP -> <#DET# #N# gen688425>)[0] (4, 4)e0
+, (NP -> <#DET# gen519099 #N#>)[0] (4, 4)e0
+, (NP -> <#DET# gen519099 #N# gen688425>)[0] (4, 4)e0
+, (NP -> <#PRON#>)[0] (4, 4)e0
+, (root -> rootS)[1] (0, 4)e3 //sure enough, we genned an error here. something must have gone amok early on and this was the best it could find..
+, (gen88032 -> <Adverbial>)[1] (3, 4)e1
+, (gen88032 -> <Adverbial gen88032>)[1] (3, 4)e1
+, (IObj -> <Prep>)[1] (1, 4)e3
+, (Adverbial -> <Prep>)[1] (1, 4)e3
+, (Verbal -> <#VT# DObj>)[2] (1, 4)e3
+, (Verbal -> <#VG# DObj IObj>)[2] (1, 4)e3
+, (Verbal -> <#VC# DObj OC>)[2] (1, 4)e3
+, (Verbal -> <#VT# gen376234 DObj>)[3] (0, 4)e4
+, (Verbal -> <#VG# gen600372 DObj IObj>)[3] (0, 4)e4
+, (Verbal -> <#VC# gen511950 DObj OC>)[3] (0, 4)e4
+, (Verbal -> <#VG# IObj DObj>)[3] (0, 4)e5
+, (Verbal -> <#VG# gen62923 IObj DObj>)[4] (0, 4)e5
+, (Verbal -> <#VG# IObj DObj>)[2] (1, 4)e3
+, (Verbal -> <#VG# gen62923 IObj DObj>)[3] (0, 4)e4
+, (Verbal -> <#VG# DObj IObj>)[3] (0, 4)e5
+, (Verbal -> <#VG# gen600372 DObj IObj>)[4] (0, 4)e5
+, (Verbal -> <#VL# PredNom>)[2] (1, 4)e3
+, (Verbal -> <#BE# PredNom>)[2] (1, 4)e2
+, (Verbal -> <#VL# gen87352 PredNom>)[3] (0, 4)e4
+, (Verbal -> <#BE# gen19007 PredNom>)[3] (0, 4)e3
+, (OC -> <PredNom>)[1] (2, 4)e2
+, (NP -> <#DET# #N# gen688425>)[3] (0, 4)e4
+, (gen688425 -> <#N# gen688425>)[2] (1, 4)e3
+, (NP -> <#N# gen688425>)[2] (1, 4)e3
+, (IObj -> <Prep>)[1] (0, 4)e3
+, (Adverbial -> <Prep>)[1] (0, 4)e3
+, (Verbal -> <#VT# DObj>)[2] (0, 4)e3
+, (Verbal -> <#VG# DObj IObj>)[2] (0, 4)e3
+, (Verbal -> <#VC# DObj OC>)[2] (0, 4)e3
+, (Verbal -> <#VG# IObj DObj>)[2] (0, 4)e3
+, (Verbal -> <#VL# PredNom>)[2] (0, 4)e3
+, (Verbal -> <#BE# PredNom>)[2] (0, 4)e3
+, (OC -> <PredNom>)[1] (1, 4)e2
+, (IObj -> <Prep>)[1] (2, 4)e2
+, (Adverbial -> <Prep>)[1] (2, 4)e2
+, (Verbal -> <#VT# DObj>)[2] (2, 4)e2
+, (Verbal -> <#VG# DObj IObj>)[2] (2, 4)e2
+, (Verbal -> <#VC# DObj OC>)[2] (2, 4)e2
+, (Verbal -> <#VT# gen376234 DObj>)[3] (1, 4)e3
+, (Verbal -> <#VG# gen600372 DObj IObj>)[3] (1, 4)e3
+, (Verbal -> <#VC# gen511950 DObj OC>)[3] (1, 4)e3
+, (Verbal -> <#VG# IObj DObj>)[3] (1, 4)e3
+, (Verbal -> <#VG# IObj DObj>)[2] (2, 4)e2
+, (Verbal -> <#VG# gen62923 IObj DObj>)[3] (1, 4)e3
+, (Verbal -> <#VG# DObj IObj>)[3] (1, 4)e3
+, (Verbal -> <#VL# PredNom>)[2] (2, 4)e2
+, (Verbal -> <#BE# PredNom>)[2] (2, 4)e2
+, (Verbal -> <#VL# gen87352 PredNom>)[3] (1, 4)e3
+, (Verbal -> <#BE# gen19007 PredNom>)[3] (1, 4)e2
+, (OC -> <PredNom>)[1] (3, 4)e1
+, (S -> <Subj Pred #.#>)[1] (0, 4)e3
+, (NP -> <#DET# gen519099 #N#>)[2] (1, 4)e2
+, (NP -> <#DET# gen519099 #N# gen688425>)[2] (1, 4)e2
+, (gen519099 -> <#ADJ# gen519099>)[2] (1, 4)e2
+, (NP -> <gen519099 #N#>)[1] (2, 4)e1
+, (NP -> <gen519099 #N# gen688425>)[1] (2, 4)e1
+, (VP -> <Verbal>)[1] (2, 4)e2
+, (VP -> <Verbal gen88032>)[1] (2, 4)e2
+, (VP -> <Verbal>)[1] (1, 4)e3
+, (VP -> <Verbal gen88032>)[1] (1, 4)e3
+, (VP -> <Verbal>)[1] (0, 4)e4
+, (VP -> <Verbal gen88032>)[1] (0, 4)e4
+, (Verbal -> <#VC# DObj OC>)[3] (0, 4)e4
+, (Verbal -> <#VC# gen511950 DObj OC>)[4] (0, 4)e5
+, (Verbal -> <#VC# DObj OC>)[3] (1, 4)e3
+, (gen376234 -> <#VT# gen376234>)[2] (1, 4)e3
+, (Verbal -> <#VT# gen376234 DObj>)[2] (1, 4)e3
+, (gen771213 -> <#VI# gen771213>)[2] (1, 4)e3
+, (Verbal -> <#VI# gen771213>)[2] (1, 4)e3
+, (Pred -> <VP>)[1] (3, 4)e1
+, (gen88032 -> <Adverbial>)[0] (4, 4)e0
+, (gen88032 -> <Adverbial gen88032>)[0] (4, 4)e0
+, (gen62923 -> <#VG# gen62923>)[2] (1, 4)e3
+, (Verbal -> <#VG# gen62923 IObj DObj>)[2] (1, 4)e3
+, (gen600372 -> <#VG# gen600372>)[2] (1, 4)e3
+, (Verbal -> <#VG# gen600372 DObj IObj>)[2] (1, 4)e3
+, (Prep -> <#PREP# NP>)[0] (4, 4)e0
+, (gen511950 -> <#VC# gen511950>)[2] (1, 4)e3
+, (Verbal -> <#VC# gen511950 DObj OC>)[2] (1, 4)e3
+, (gen87352 -> <#VL# gen87352>)[2] (1, 4)e3
+, (Verbal -> <#VL# gen87352 PredAdj>)[2] (1, 4)e3
+, (Verbal -> <#VL# gen87352 PredNom>)[2] (1, 4)e3
+, (gen19007 -> <#BE# gen19007>)[2] (1, 4)e2
+, (Verbal -> <#BE# gen19007 PredAdj>)[2] (1, 4)e2
+, (Verbal -> <#BE# gen19007 PredNom>)[2] (1, 4)e2
+, (VP -> <Verbal gen88032>)[2] (2, 4)e2
+, (gen88032 -> <Adverbial gen88032>)[2] (2, 4)e2
+, (VP -> <Verbal gen88032>)[2] (1, 4)e2
+, (VP -> <Verbal gen88032>)[2] (0, 4)e3
+, (gen88032 -> <Adverbial gen88032>)[2] (0, 4)e4
+, (gen88032 -> <Adverbial gen88032>)[2] (1, 4)e3
+, (gen88032 -> <Adverbial>)[1] (1, 4)e3
+, (gen88032 -> <Adverbial gen88032>)[1] (1, 4)e3
+, (OC -> <PredAdj>)[0] (4, 4)e0
+, (OC -> <PredNom>)[0] (4, 4)e0
+, (NP -> <#N# gen688425>)[2] (0, 4)e3
+, (gen688425 -> <#N# gen688425>)[2] (0, 4)e3
+, (gen88032 -> <Adverbial>)[1] (0, 4)e3
+, (gen88032 -> <Adverbial gen88032>)[1] (0, 4)e3
+, (gen88032 -> <Adverbial>)[1] (2, 4)e2
+, (gen88032 -> <Adverbial gen88032>)[1] (2, 4)e2
+, (Pred -> <VP>)[0] (4, 4)e0
+, (NP -> <#DET# gen519099 #N#>)[2] (0, 4)e3
+, (NP -> <#DET# gen519099 #N# gen688425>)[2] (0, 4)e3
+, (gen519099 -> <#ADJ# gen519099>)[2] (0, 4)e3
+, (NP -> <gen519099 #N#>)[1] (1, 4)e2
+, (NP -> <gen519099 #N# gen688425>)[1] (1, 4)e2
+, (Pred -> <VP>)[1] (2, 4)e2
+, (Pred -> <VP>)[1] (1, 4)e3
+, (Pred -> <VP>)[1] (0, 4)e4
+, (Verbal -> <#VT# gen376234 DObj>)[2] (0, 4)e4
+, (gen376234 -> <#VT# gen376234>)[2] (0, 4)e4
+, (Verbal -> <#VI# gen771213>)[2] (0, 4)e4
+, (gen771213 -> <#VI# gen771213>)[2] (0, 4)e4
+, (S -> <Subj Pred #.#>)[2] (0, 4)e4
+, (Adverbial -> <#ADV#>)[0] (4, 4)e0
+, (Adverbial -> <Prep>)[0] (4, 4)e0
+, (Verbal -> <#VG# gen62923 IObj DObj>)[2] (0, 4)e4
+, (gen62923 -> <#VG# gen62923>)[2] (0, 4)e4
+, (Verbal -> <#VG# gen600372 DObj IObj>)[2] (0, 4)e4
+, (gen600372 -> <#VG# gen600372>)[2] (0, 4)e4
+, (Verbal -> <#VC# gen511950 DObj OC>)[2] (0, 4)e4
+, (gen511950 -> <#VC# gen511950>)[2] (0, 4)e4
+, (Verbal -> <#VL# gen87352 PredAdj>)[2] (0, 4)e4
+, (Verbal -> <#VL# gen87352 PredNom>)[2] (0, 4)e4
+, (gen87352 -> <#VL# gen87352>)[2] (0, 4)e4
+, (Verbal -> <#BE# gen19007 PredAdj>)[2] (0, 4)e3
+, (Verbal -> <#BE# gen19007 PredNom>)[2] (0, 4)e3
+, (gen19007 -> <#BE# gen19007>)[2] (0, 4)e3
+, (VP -> <Verbal>)[0] (4, 4)e0
+, (VP -> <Verbal gen88032>)[0] (4, 4)e0
+, (NP -> <gen519099 #N#>)[1] (0, 4)e3
+, (NP -> <gen519099 #N# gen688425>)[1] (0, 4)e3
+, (Verbal -> <#VT# DObj>)[0] (4, 4)e0
+, (Verbal -> <#VT# gen376234 DObj>)[0] (4, 4)e0
+, (Verbal -> <#VI#>)[0] (4, 4)e0
+, (Verbal -> <#VI# gen771213>)[0] (4, 4)e0
+, (Verbal -> <#VG# IObj DObj>)[0] (4, 4)e0
+, (Verbal -> <#VG# gen62923 IObj DObj>)[0] (4, 4)e0
+, (Verbal -> <#VG# DObj IObj>)[0] (4, 4)e0
+, (Verbal -> <#VG# gen600372 DObj IObj>)[0] (4, 4)e0
+, (Verbal -> <#VC# DObj OC>)[0] (4, 4)e0
+, (Verbal -> <#VC# gen511950 DObj OC>)[0] (4, 4)e0
+, (Verbal -> <#VL# PredAdj>)[0] (4, 4)e0
+, (Verbal -> <#VL# PredNom>)[0] (4, 4)e0
+, (Verbal -> <#VL# gen87352 PredAdj>)[0] (4, 4)e0
+, (Verbal -> <#VL# gen87352 PredNom>)[0] (4, 4)e0
+, (Verbal -> <#BE# PredAdj>)[0] (4, 4)e0
+, (Verbal -> <#BE# PredNom>)[0] (4, 4)e0
+, (Verbal -> <#BE# gen19007 PredAdj>)[0] (4, 4)e0
+, (Verbal -> <#BE# gen19007 PredNom>)[0] (4, 4)e0
+]]

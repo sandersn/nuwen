@@ -1,0 +1,19 @@
+;S is the main symbol--it ensures the subject number matches the verb and 
+;gives the option to a simple equative sentence.
+S->(SngNP SngPred | PlNP PlPred | DuNP DuPred | NP Pred) #.#
+;the different types of subject (singular, plural, and dual) make sure that
+;the proper type of adjective is used.
+SngNP->[#DET#] {#ADJ#} #SN#
+;A plural subject can also consist of two (or more) singular subjects
+PlNP->[#DET#] {#PADJ#} #PN# | (SngNP | PlNP) #CONJ# SngNP
+DuNP->[#DET#] {#DADJ#} #DN#
+;NP is provided for sentences using the copula (that don't need number matching)
+NP->SngNP | PlNP | DuNP
+;SV stands for singular verb, PV=plural, and DV=dual
+SngPred->#SV# [NP]
+PlPred->#PV# [NP]
+DuPred->#DV# [NP]
+;Pred provides the generic fallback of trying the copula
+Pred->#COPULA# (NP | Adjectival) | (NP | Adjectival) [#COPULA#]
+;Adjectival provides a generic way to treat adjectives involved in a copula sentence.
+Adjectival->#ADJ# | #DADJ# | #PADJ#

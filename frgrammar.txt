@@ -1,0 +1,30 @@
+;TODO:Handle infinitives after verbs only for now
+;TODO:Handle negatives
+S->Statement | Question
+Statement->Phrase #.#
+Question->{#INT#} Phrase #?#
+Phrase->NP-1-SG Verbal-1-SG | NP-1-PL Verbal-1-PL | NP-2-SG Verbal-2-SG | NP-2-PL Verbal-2-PL | (NP-M-3-SG | NP-F-3-SG) Verbal-3-SG | (NP-M-3-PL | NP-F-3-PL) Verbal-3-PL | (NP-1-SG | NP-2-SG | NP-M-3-SG) Copula-M-3-SG | (NP-1-SG | NP-2-SG | NP-F-3-SG) Copula-F-3-SG | (NP-1-PL | NP-2-PL | NP-M-3-PL) Copula-M-3-PL | (NP-1-PL | NP-2-PL | NP-F-3-PL) Copula-F-3-PL
+
+; PRON | [DET] {ADJ} N {ADJ} (but this only for more advanced classes)
+NP->NP-M-3-SG | NP-M-3-PL | NP-F-3-SG | NP-F-3-PL | NP-1-SG | NP-1-PL | NP-2-SG | NP-2-PL
+NP-M-3-SG->#PRON-M-3-SG# | [#DET-M-SG#] #N-M-SG# [#ADJ-M-SG#]
+NP-M-3-PL->#PRON-M-3-PL# | [#DET-PL#] #N-M-PL# [#ADJ-M-PL#]
+NP-F-3-SG->#PRON-F-3-SG# | [#DET-F-SG#] #N-F-SG# [#ADJ-F-SG#]
+NP-F-3-PL->#PRON-F-3-PL# | [#DET-PL#] #N-F-PL# [#ADJ-F-PL#]
+NP-1-SG->#PRON-1-SG#
+NP-1-PL->#PRON-1-PL#
+NP-2-SG->#PRON-2-SG#
+NP-2-PL->#PRON-2-PL#
+;for normal verbs k
+;Change to Verbal->(#V# | #NE# #V# #NEG#) {Adverbial} [#INF#] [NP]
+Verbal-3-SG->(#V-3-SG# | #NE# #V-3-SG# #NEG#) {Adverbial} [#INF#] [NP]
+Verbal-3-PL->(#V-3-PL# | #NE# #V-3-PL# #NEG#) {Adverbial} [#INF#] [NP]
+Verbal-2-SG->(#V-2-SG# | #NE# #V-2-SG# #NEG#) {Adverbial} [#INF#] [NP]
+Verbal-2-PL->(#V-2-PL# | #NE# #V-2-PL# #NEG#) {Adverbial} [#INF#] [NP]
+Verbal-1-SG->(#V-1-SG# | #NE# #V-1-SG# #NEG#) {Adverbial} [#INF#] [NP]
+Verbal-1-PL->(#V-1-PL# | #NE# #V-1-PL# #NEG#) {Adverbial} [#INF#] [NP]
+Adverbial->#ADV# | #PREP# NP
+Copula-M-3-SG->(#COPULA-SG# | #NE# #COPULA-SG# #NEG#) (NP-M-3-SG | [#ADV#] #ADJ-M-SG#)
+Copula-M-3-PL->(#COPULA-PL# | #NE# #COPULA-PL# #NEG#) (NP-M-3-PL | [#ADV#] #ADJ-M-PL#)
+Copula-F-3-SG->(#COPULA-SG# | #NE# #COPULA-SG# #NEG#) (NP-F-3-SG | [#ADV#] #ADJ-F-SG#)
+Copula-F-3-PL->(#COPULA-PL# | #NE# #COPULA-PL# #NEG#) (NP-F-3-PL | [#ADV#] #ADJ-F-PL#)
