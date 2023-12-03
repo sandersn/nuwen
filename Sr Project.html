@@ -1,0 +1,279 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio 6.0">
+<TITLE>Senior Project Documentation and History</TITLE>
+<style>@import url(..\Template.css);</style>
+</HEAD>
+<BODY>
+<h2>Project Notes:</h2>
+<p><strong>Feature idea from Mme Graham:</strong>
+Allow weighting of errors such that the current
+concept being studied can have extra weight.</p>
+<p>Might be able to obtain small but accurate dictionaries 
+of various word types from Allons-Y! since Mme Graham tends to draw questions almost exclusively from its vocabulary. Need dictionaries of:</p>
+<UL>
+  <LI>legal words 
+  <LI>reg verbs 
+  <LI>irreg verbs + conjugations 
+  <LI>reg/irreg nouns, adjectives, etc</LI></UL>
+<P>Need an advanced mode to allow viewing and editing of above dictionaries 
+which can then be updated.</P>
+<P>After survey of tasks, here are the algorithms I need to focus on learning 
+and perfecting (in French :):</P>
+<UL>
+  <LI>
+<DIV>POS tagging (Easi<STRONG>er</STRONG>            
+    )</DIV>
+  <LI>
+<DIV>Sentence parsing (can be slightly loose as it can have human help on one side and a 
+stored target on the other)</DIV>
+  <LI>
+<DIV>Verb conjugation and de-conjugation. (Easier than the rest, but not 
+as much easily available algorithms)</DIV>
+  <LI>
+<DIV>Parse tree comparison and difference extraction.(Probably hardest since it needs 
+to give intelligent looking reports)</DIV></LI></UL>
+<P>            
+Specific technologies I will need(I hope Python or at 
+least C#)(these will serve as            
+a smoke-screen to Jim :):</P>
+<UL>
+  <LI>
+<DIV>     Object persistence to store sentences etc. (Easy 
+to obtain, boring to code)</DIV>
+  <LI>
+<DIV>            
+Server-based web pages. (Probably easy)</DIV>
+  <LI>
+<DIV>            
+ Possibly windows forms. (Easy)</DIV>
+  <LI>
+<DIV>            
+ Regular expression support. (Easy)</DIV>
+  <LI>
+<DIV>            
+ Sendmail program: (Probably easy)</DIV></LI></UL>
+<P>            
+Background data I will need(probably done mostly in            
+2 hr French Special Projects):</P>
+<UL>
+  <LI>
+<DIV>POS training, <STRONG>strongly</STRONG> tilted 
+  towards the vocabulary in Allons-Y! (not <STRONG>too</STRONG>            
+  difficult to obtain)</DIV>
+  <LI>
+<DIV>     Dictionaries of words of various types and 
+denominations (also mostly from Allons-Y!)</DIV>
+  <LI>
+<DIV>           a 
+CFG grammar of French (gulp)</DIV>
+  <LI>
+<DIV>           A list of the errors that a human grader should 
+  consider when grading so that           the 
+computer will consider them too.</DIV>
+  <LI>
+<DIV>            
+   Other stuff!</DIV></LI></UL>
+<h2>Project Documentation:</h2>
+<h3>Goals:</h3>
+<h4>Reason</h4><P>To create a program that will allow the computerised 
+creation, assignment, and automatic grading of beginning level French 
+translation exercises. Currently the C of O French Department has been unable to 
+find a system that would be able to take the place of paper translation 
+exercises because there is no freely available program that can grade the 
+translated sentences as accurately as a human grader. I propose to create to a 
+program that would do so. Once available, the professor would be able to create 
+assignments on her personal computer and make them available over the 
+I-Net to the students. The students would have the 
+advantage of immediate grading and feedback and would be able to mail 
+the completed assignment to the dedicated French Department e-mail address automatically.</P><P>Most of the problem with&nbsp;computer grading of 
+translations is that most tests are for pure equality. If the string does not 
+match the key exactly, the answer is counted wrong. However, human graders are 
+able to look for such things as incorrectly conjugated verbs, missing 
+prepositions, and slightly misspelled words. They can then call 
+these things to the attention of the student, but 
+the impact is greatly reduced given the time lag involved in taking 
+up the assignments, grading them, and returning them to the student.</P>
+<h4>Specific parts and problems</h4>
+<p>The system will consist of two main programs. The first is the teacher interface, which allows a 
+professor to enter English sentences matched with their correct French translations. This 
+interface will handle entry of sentences, sentence parsing, and storage to 
+disk. This program will probably be a standard Windows application using&nbsp;some .NET 
+CLR language or possibly a COM wrapper around Python and Windows 
+Forms. The second program is the student interface, which allows students to 
+enter their translations and interactively receive feedback on their work, as 
+well as e-mail it back to the professor. The feedback would try to simulate a 
+human assistant as closely as possible, first giving general areas that are 
+incorrect, and resolving to more and more specific errors in steps. The program 
+will probably be a web-based form using ASP.NET and some .NET language.</p>
+<p>The tasks for the first program will be as follows:</p>
+<OL type=I>
+  <LI>
+Record both the English and French sentences. Since 
+  the beginning French classes use the vocabulary from their book (currently 
+  Allons-Y!) the possible words will usually be known in advance.
+  <LI>Parse the French sentence to determine the grammatical structure, such as 
+  the subjects and verbs as well as conjugations of verbs. This information will 
+  be used when parsing the students' sentences for probable errors.
+  <LI>Save the English sentence, French sentence, and French grammatical 
+  structure to a location that will be available for the student program to 
+  generate the forms that the student will see.</LI></OL>
+<P>The tasks for the second program will be as follows:</P>
+<ol type=I><li>Read the sentences from a file and create a form to 
+  display all English sentences.
+  <LI>As the student translates each sentence, parse the 
+  French entered according to the expectations of the&nbsp;target sentence and 
+  grammatical structure. Those same expectations are used in the next step to 
+  determine the type of differences that are found between the source and target 
+  sentences.
+  <LI>Where differences are found, categorise them as 
+  <UL><li><SPAN 
+  class=keywd>textual</SPAN>  (misCapitalisation or&nbsp; incorr ectspacin 
+  g) which do not&nbsp;affect the grade.<li><SPAN class=keywd>sloppiness</SPAN> 
+   (missing accents or punctuation) which will probably not reduce the 
+  grade.<li><SPAN class=keywd>minor</SPAN>  (incorrect verb conjugation or 
+  misspelled words) which will reduce the grade in part.<li><SPAN 
+  class=keywd>fatal</SPAN>   (incorrect verb or noun) 
+  which will&nbsp;set the&nbsp;grade for the problem to 
+  zero.</li></UL>
+  <LI>Send the graded assignment in plain text or HTML format to the professor via the department e-mail (<A 
+  href="mailto:french@cofo.edu">french@cofo.edu</A>). Errors will be 
+  highlighted with the projected reason given. Then the professor (or assistant) 
+  needs only to verify that the computer has graded accurately.
+  <LI>Meanwhile, the student will be presented with a results page in which he 
+  has a chance to correct the sentences on which he had problems. The sentences 
+  will be marked with the number of errors of each type, but there will be no 
+  specific information given.
+  <LI>After repeated tries, the program will reveal each problem in more and 
+  more detail. After a specified threshold, the entire projected error, reason, 
+  and correct solution will be given.</LI></ol>
+<h4>Individual&nbsp;Task Description of Probably Algorithms</h4>
+<P>(Teacher program) Task I: Record the sentences from both English and French. 
+This should be a fairly simple interaction with some sort of GUI. The sentences 
+should be split on all whitespace and punctuation, with punctuation included in 
+the sentence. Case should be preserved in one copy of the string and ignored in 
+another. Since the vocabulary is fairly well known ahead of time, this might be 
+the place to flag new words and ask about spelling or adding to the dictionary 
+with a POS.</P>
+<P>Task II:Parse the French sentence. First, tag each word's POS, then parse the 
+sentence into a tree structure (Earley's algorithm?). This will involve writing 
+some sort of CFG for French. The complete version of this will, most properly, 
+be done during actual Sr Project, with only small mock-ups before that. This is 
+something that should apply well to the 2 hr French class. There will be 
+questions of <EM>how</EM> complete I can get this. I need to do a little 
+research about how much other people have done before to see if I can use their 
+work.</P>
+<P>Task III:Viva pickle! I will probably use the web space provided by the 
+school to the French web site since Jeremy says it has undocumented ASP 
+capabilities.</P>
+<P>(Student program) Task I:Pickle-like caps plus a probable web interface. I 
+hope written in a <STRONG>real</STRONG> language, but not sure about that 
+yet.</P>
+<P>Task II: If my parser is general enough, I won't need clues from the target 
+sentence to help the parsing of the given sentence. I hope.</P>
+<P>Task III:Identification of errors:</P>
+<UL>
+  <LI>Textual:This is where simple equality works fine, as 
+  long as it's equality of regexen. 
+  <LI>Sloppiness:Again, regex equality should work fine 
+  here. 
+  <LI>Minor:I'll need a separate lot of code that looks at 
+  all verbs in the parse tree and compares them between the two sentences. I'll 
+  need some sort of backwards conjugation code? Need to look into this more. 
+  <LI>Fatal:This is where the parse tree really comes in strong. Traverse down 
+  the tree looking for differences and cataloguing them. Even one is really too 
+  much though.</LI></UL>
+<P>Task IV: Send the graded assignment to the professor with errors highlighted. 
+This will be trivial HTML generation assuming that the language I'm using has a 
+sendmail ability.</P>
+<P>Task V and VI: Present results page with errors progressively revealed. 
+Presentation will be trivial HTML generation--I'll need some sort of instance 
+variables to keep track of the number of times that the page has been shown. At 
+each pass, I'll show more and more trivial errors (id est, traverse back up the 
+list of error types). The hardest part will be translating the fatal errors into 
+a human-readable error message. But it can never touch the awfulness of the STL, 
+so I am content. Also note that I will have to have the program compare&nbsp;the 
+two sentences to find the correct solution for most error types.</P>
+<h4>Methodology used to solve</h4>
+<OL type=I>
+  <LI>Allow the user to input the source and destination sentences. 
+  Allow the user to specify multiple destination values for a single source word. 
+  (If developed properly, this could turn into a semi-decent completely-in-french Q&amp;A 
+  handler as well) (Might need some sort of storage interaction as well...but 
+  this could be a local program instead of web based, so it might be easier)
+  <LI>Ask the user to identify the part of speech for each word, guessing the 
+  obvious ones if possible (eg [les?|las?] and others)
+  <LI>Categorise the probable errors likely ranking incorrect vocab recall and 
+  bad spelling as the least two likely errors, respectively.
+  <LI>Actually parse the "given" target string, comparing it to out "annotated" 
+  target string and finding where it differs, giving the resulting hints about 
+  what might be wrong. Also need realignment code in case a word is extra (might 
+  take the total word delta and then take and then take that as a total which 
+  must be accounted for by that many re-alignment operations (possibly see 
+  dynamic programming methods for generating the most likely shifts (eg 
+  Jurafsky's Speech and Language Processing p154))
+  <LI>Output a list of probable errors that the student made. In the final list, 
+  these will not give precise&nbsp;descriptions of&nbsp;where the engine thinks 
+  the student is wrong until they have tried two or three times.
+  <LI>If possible, use a mailer ability to mail results to <A 
+  href="mailto:french@cofo.edu">french@cofo.edu</A>.</LI></OL>
+<H3>Pseudocode:</H3>
+<h4>PalFrame/main/frmPalindrome</h4>
+<p class="emf">  keyReleased:</p><p>This function determines the text to process and displays 
+whether or not the text is a palindrome. In C++, this is the body of main() 
+since the C++ implementation does not have a GUI. In Visual Basic, the same 
+method is called Change(), but is called under the same circumstances<PRE>BEGIN
+~~~~~
+Get text from txtPalindrome
+If length of text &gt; 0 Then
+	If isPalindrome(text) = True Then
+		Set lblPalindrome = text + " is a palindrome"
+	Else
+		Set lblPalindrome = text + " is not a palindrome"
+	Make lblPalindrome visible	
+Else
+	Make lblPalindrome invisible
+~~~~~
+END</PRE>
+<p class="emf">isPalindrome:<p>
+<P>This function receives a string and returns a boolean indicating whether or not
+it's a palindrome. In C++, I use a char * because of the lack of a built-in
+string class.</P>
+<pre class="">BEGIN
+~~~~~~
+Create a stack
+Create a queue
+If text length = 0 Then
+	Return false
+For i = 0 to text length-1
+	Push the character at i onto the stack
+	Insert the character at i into the queue
+Set pal = true
+While the stack is not empty and the q is not empty
+	If stack.pop() &lt;&gt; q.remove() Then
+		pal = false
+Return pal
+~~~~~~
+END</pre>
+<h2>Project History:</h2>
+
+  <LI>06&nbsp;Jun 2002:&nbsp;Setup a Sr Project dir and file. 
+I'm going to change my spelling algorithm to the min edit distance one given in 
+Jurafsky p153 instead of the hoky ASCII delta one I've got going now. It'll be 
+slower (n<SUP>2</SUP> ), but incredi-much more accurate. 
+<LI>07 Jun: Going to spell out my goals a little better 
+with overview, parts of program and steps to achieve each part(and maybe 
+possible technologies I might use). Later: Well, I wrote about&nbsp;a page and a 
+half. Then we had a brownout so I'm retyping this. BTW, the spelling algorithm 
+worked like a charm once I figured out how to contruct 2D arrays in javascript. 
+Subsequent dimensions have to be initialised and attached in a loop. x_x Even 
+slower than normal Java. 
+<li>15 Jul: I've read quite a bit more in Jurafsky and 
+Martin and feel like I have a better understanding of the algorithms that will be required, so I'm going to start spelling them out associated with each task of the two programs.
+<br>Later:Got a lot typed up. I feel 
+better since I pretty much know which algorithms I'll need to develop know. See Project Notes for pretty much all my ingredients.</li>
+<li>7 Sep: Looked over the file again now that I have a working POS trainer just
+waiting for somebody to train it. (Of course, it needs a bit more work still, but...). I
+also added the feature idea that Mme Graham mentioned.</li>
+</BODY>
+</HTML>

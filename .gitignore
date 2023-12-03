@@ -2,3 +2,4 @@
 *.pyo
 CVS/
 .DS_Store
+*.zip

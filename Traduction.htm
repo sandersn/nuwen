@@ -1,0 +1,323 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<%@ Language=JavaScript%>
+<HTML>
+<HEAD>
+<META name=VI60_defaultClientScript content=JavaScript>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio 6.0">
+<TITLE>Intelligent Translation Helper</TITLE>
+<style>
+#errors { font-family:"Arial"; font-size: 12pt; }
+</style>
+<script language="javascript">
+function process()
+{
+	//housekeeping
+	var strCorrect = "je suis allé au parc hier";
+	var strSentence = frmTrad.txtTrad.value;
+	clearErrors();
+	
+	//preprocessing--strip . , lcase it
+	strSentence = preprocess(strSentence);
+	if(!frmTrad.chkAccents.checked)
+	{
+		strCorrect = stripAccents(strCorrect);
+		strSentence = stripAccents(strSentence);
+	}
+	// break both sentences up into words
+	var saraWords = arrayBreak(strSentence);
+	var saraCorrect = arrayBreak(strCorrect);
+	
+	//now look at each word from each array and see if they are equal.
+	var bEqual = true;
+	for(var i = 0; i < saraCorrect.length; i++)
+	{
+		if(saraWords[i] != saraCorrect[i])
+		{
+			//detect usage of female participle
+			if((saraCorrect[i]=="allé") && (checkAgreement(saraCorrect[i], saraWords[i], 3)))
+			{
+				appendError("Remember that the female participle (added e) implies that the subject is female\n"
+									+ "Since the subject of this sentence is je, you should be female to use the added e.");
+			}
+			else//detect use of verb avoir
+			if(((saraCorrect[i] =="suis") && (memberofVerb("avoir", saraWords[i])))
+			|| ((saraCorrect[i] =="je") && (memberofVerb("avoir", saraWords[i+1]))))
+			{
+				appendError("You used a form of avoir. However, aller requires a form of être.");
+				bEqual=false;	//this implies fatal error(one that counts the question wrong)
+			}
+			else//detect incorrectly conjugated etres
+			if((saraCorrect[i] == "suis") && (memberofVerb("être", saraWords[i])))
+			{
+				appendError("You incorrectly conjugated être as `" + saraWords[i]
+					+ "'\nTry using the je form.");
+				bEqual = false;
+			}
+			else//detect missing accents
+			if(checkMissingAccents(saraCorrect[i], saraWords[i]))
+			{
+				appendError("`" + saraWords[i] 
+					+ "'is missing some accents. You should have had `"
+					+ saraCorrect[i] + "'");
+				bEqual = false;					
+			}
+			else//detect misspelled words using the min edit distance
+			if(isWordSimilar(saraCorrect[i], saraWords[i]))
+			{
+				appendError("Check your spelling of `" + saraWords[i]
+					+ "'\n...our sources claim it's misspelled.");
+				bEqual = false;
+			}
+			else//undetected
+			{
+				appendError("Undetected error at word `" + saraWords[i]
+					+"'\n...wait for the omniscient version of this engine.");
+				bEqual = false;
+			}
+		}
+	}
+	if(bEqual)
+	{
+		appendError("Very good! You got it right, word for word");
+	}
+	else
+	{
+		appendError("Here's the sentence, divided into words:\n" + saraWords);		
+	}
+	showErrors();
+}
+//preprocessing functions
+function preprocess(strSentence)
+{
+	var sSentence = new String(strSentence);
+	sSentence = sSentence.toLowerCase();	//lcase it too because else we have weird problems
+	if(sSentence.charAt(sSentence.length - 1) == '.')
+	{
+		sSentence = sSentence.substr(0, sSentence.length-1);
+	}
+	return sSentence;
+}
+
+function arrayBreak(strSentence)
+{
+	var sSent = new String(strSentence);
+	return sSent.split(/ |'/);//this is a regex, so it can become incredibly useful/complicated
+}
+//end preprocessing functions
+//error and note display functions
+	//appends passed string to error DIV
+function appendError(strError)
+{
+	errors.innerText += "\n" + strError;
+}
+//shows or hides error DIV, flopping current visibility
+function showErrors()
+{
+/*	if(errors.style.visibility = "visible")
+	{
+		errors.style.visibility = "hidden";
+	}
+	else
+	{*/
+		errors.style.visibility = "visible";
+	//}
+}
+//clear errors DIV back to original status.
+function clearErrors()
+{
+	errors.innerText = "Notes:";
+}
+//end error display functions
+//error parsing functions
+
+function checkAgreement(strCorrect, strGiven, intFilter)
+{
+//this function takes a 'correct' participle(default of singular male)
+//and checks if they are still the same
+//strCorrect: the mel-sing version of the participle
+//strGiven: the provided version of the participle
+//intFilter: whether to filter for specific gender/numbers
+/*
+	0=All
+	1=Mel-All
+	2=Fem-All
+	3=Fem-Sing
+	4=Mel-Plur
+	5=Fem-Plur
+	6=Sing-All
+	7=Plur-All
+*/
+	if(strCorrect + "e" == strGiven)
+	{
+		//fem-sing transformation
+		return (intFilter==0 || intFilter==2 || intFilter==3 || intFilter==6);
+	}
+	else		
+	if(strCorrect + "s" == strGiven)
+	{
+		//mel-plur transformation
+		return(intFilter==0 || intFilter==1 || intFilter==4 || intFilter==7)
+	}
+	else
+	if(strCorrect + "es" == strGiven)
+	{
+		//fem-plur transformation
+		return (intFilter==0 || intFilter==2 || intFilter==5 || intFilter==7)
+	}
+	else
+	{
+		return false;//not a valid transformation
+	}
+}
+function checkMissingAccents(strCorrect, strGiven)
+{
+//this function takes a correctly accented string and compares
+//it to a entered string. If the strings are equal AFTER stripping
+//accents from the correct string(and possibly the given one), then return TRUE
+//because at least one accent is missing.
+	if(stripAccents(strCorrect) == stripAccents(strGiven)) 
+		return true;
+	else
+		return false;
+	//should be:return stripAccents(strCorrect) == stripAccents(strGiven); after debugging
+}
+function stripAccents(strStrip)
+{
+	//a
+	strStrip = strStrip.replace("à", "a");
+	strStrip = strStrip.replace("â", "a");
+	strStrip = strStrip.replace("ä", "a");
+	//e
+	strStrip = strStrip.replace("é", "e");
+	strStrip = strStrip.replace("ê", "e");
+	strStrip = strStrip.replace("è", "e");
+	strStrip = strStrip.replace("ë", "e");
+	//i
+	strStrip = strStrip.replace("ì", "i");
+	strStrip = strStrip.replace("î", "i");
+	strStrip = strStrip.replace("ï", "i");
+	//o
+	strStrip = strStrip.replace("ò", "o");
+	strStrip = strStrip.replace("ô", "o");
+	strStrip = strStrip.replace("ö", "o");
+	//u
+	strStrip = strStrip.replace("ù", "u");
+	strStrip = strStrip.replace("û", "u");
+	strStrip = strStrip.replace("ü", "u");
+	
+	return strStrip;	
+}
+function memberofVerb(strInfinitive, strConjugated)
+{
+switch(strInfinitive)
+{
+case "avoir":
+	return (strConjugated=="ai" 
+			|| strConjugated=="as" 
+			|| strConjugated=="a" 
+			|| strConjugated=="avons" 
+			|| strConjugated=="avez" 
+			|| strConjugated=="ont");
+case "être":
+	return (strConjugated=="suis"
+			|| strConjugated=="es"
+			|| strConjugated=="est"
+			|| strConjugated=="sommes"
+			|| strConjugated=="êtes"
+			|| strConjugated=="sont");
+}
+}
+/*Detects if a word is similar enough (yet not equal) to probably be misspelled
+Accepts:strCorrect, the correct answer
+	strGiven, the wrong answer
+Returns:boolean, true if the word is probably misspelled, false if it's too far away
+Notes:Currently the costs are very simple and are not based on confusion matrices.
+If I can get some of these (for English, and maybe French) I will probably implement
+that eventually
+*/
+function isWordSimilar(strCorrect, strGiven)
+{
+	var n = strCorrect.length;
+	var m = strGiven.length;
+	//create distance 2D array
+	var distance = new Array(n+1);  // make the 1st dimension
+	for (var j = 0; j < distance.length; j++)  
+	{
+	    var aRow = new Array(m+1);  // Create a row.
+		distance[j] = aRow;  // attach the filled row to the table.
+	}
+	//init #(0th) row/col
+	for(var i = 0; i < n + 1; i++)
+	{
+		distance[i][0] = i;
+	}
+	for(var i = 0; i < m + 1; i++)
+	{
+		distance[0][i] = i;
+	}
+	//build answer array
+	//NOTE:Advancing one on the column means an insertion. Advancing one on the row
+	//means a deletion. Advancing diagonally means both at once (substitution) unless they're already
+	//the same, in which case it's free
+	for(var i = 1; i < n+1; i++)//i measures columns (correct)
+	{
+		for(var j = 1; j < m+1; j++)//j measures rows (given)
+		{
+			var temp = Math.min(distance[i-1][j] + 1, distance[i-1][j-1] 
+				+ (strCorrect.charAt(i-1) == strGiven.charAt(j-1) ? 0 : 2));
+			distance[i][j] = Math.min(temp, distance[i][j-1] + 1);
+		}
+	}
+	//if the difference is greater than half the length of the word, it's too far away. this number is arbitrary,
+	//but for short words (like in French :) it needs to be a pretty high percent of the word size
+	return (Math.ceil(strCorrect.length / 2.0) >= distance[n][m]);
+}
+//end error parsing functions
+//bonus time counting function!
+function countTime()
+{
+	seconds++;
+	frmTrad.txtTrad.value = seconds;
+}
+</script>
+<SCRIPT ID=clientEventHandlersJS LANGUAGE=javascript>
+<!--
+
+var seconds = 0;
+var timerID = 0;
+function cmdStart_onclick() 
+{
+	seconds = 0;
+	timerID = setInterval("countTime()", 1000);
+}
+function cmdStop_onclick() 
+{
+	var minutes = seconds / 60;
+	
+	clearErrors();
+	appendError(Math.floor(minutes) + ":" + (seconds % 60) + " elapsed.");
+	clearInterval(timerID);
+}
+//-->
+</SCRIPT>
+</HEAD>
+<BODY>
+<h3 align=right>Translate the sentence to French:</h3>
+<p align=center>I went to the park yesterday.</p>
+<!-- Correct is: "Je suis allé[e] au parc hier"-->
+<form id="frmTrad">
+Entrez votre traduction ici:
+<input type="text" id="txtTrad" value="">
+<input type="button" id="cmdComp" value="Compare" onclick="process()">
+<br>
+<input type="checkbox" id="chkAccents" CHECKED
+	name="chkAccents" title="Use accents">Use accents
+<p>
+<br>Bonus timer function!<br>
+<input type="button" id="cmdStart" value="Start" LANGUAGE=javascript onclick="return cmdStart_onclick()">
+<input type="button" id="cmdStop" value="Stop" LANGUAGE=javascript onclick="return cmdStop_onclick()">
+</p>
+</form>
+<p style="visibility:hidden" id="errors">Invisible ink</p>
+</BODY>
+</HTML>
